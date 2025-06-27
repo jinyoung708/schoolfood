@@ -1,0 +1,93 @@
+.btnWrap.active {
+  @apply lg:z-10;
+}
+
+.popupWrap {
+  @apply absolute w-[498px] left-1/2 top-full z-10;
+  @apply lg:-translate-x-1/2 lg:p-[40px] lg:bg-white lg:rounded-[16px] lg:mt-[12px];
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.popup {
+  @apply relative bg-white px-[20px] pb-[48px] lg:px-0 lg:pb-0;
+}
+
+.searchWrap > div {
+  width: 100%;
+}
+
+.productList > li + li {
+  margin-top: 16px;
+}
+.productList > li label {
+  @apply flex items-center gap-[16px] cursor-pointer;
+}
+
+.radio {
+  @apply w-[24px] h-[24px] p-[2px] shrink-0;
+}
+.radio span {
+  @apply block w-full h-full p-[4px] border rounded-full border-gray-400;
+}
+.radio span::before {
+  @apply block w-full h-full rounded-full;
+  content: '';
+}
+.radio input:checked + span {
+  @apply border-secondary;
+}
+.radio input:checked + span::before {
+  @apply bg-secondary;
+}
+
+.tooltipWrap {
+  @apply flex gap-[16px] absolute top-full z-10 bg-white rounded-[6px] px-[12px] py-[6px] whitespace-nowrap mt-[16px];
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.tooltipWrap.left {
+  @apply left-0;
+}
+.tooltipWrap.center {
+  @apply left-1/2 -translate-x-1/2;
+}
+.tooltipWrap.right {
+  @apply right-0;
+}
+.tooltipWrap.top {
+  @apply top-auto bottom-full mt-0 mb-[16px];
+}
+.tooltipWrap::before {
+  content: '';
+  background: url('/images/icon/arrow_tooltip.png') no-repeat center;
+  @apply absolute top-[-8px] w-[12px] h-[10px];
+}
+.tooltipWrap.left::before {
+  @apply lg:left-[16px] left-[12px] -translate-x-1/2;
+}
+.tooltipWrap.center::before {
+  @apply left-1/2 -translate-x-1/2;
+}
+.tooltipWrap.right::before {
+  @apply lg:right-[16px] right-[12px] translate-x-1/2;
+}
+.tooltipWrap.top::before {
+  @apply top-auto bottom-[-8px] rotate-[180deg];
+}
+.tooltipWrap .info {
+  @apply flex items-center text-base font-medium;
+}
+.tooltipWrap .info span:not(:last-child)::after {
+  content: '|';
+  @apply inline-block text-gray-300 px-[8px];
+}
+
+/* MO */
+@media (max-width: 1023px) {
+  .popupWrap {
+    @apply flex items-end fixed left-0 top-0 w-full h-full z-[var(--header-z)];
+  }
+
+  .popup {
+    @apply w-full;
+    border-radius: 16px 16px 0 0;
+  }
+}

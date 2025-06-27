@@ -1,0 +1,96 @@
+.noticeWrap {
+  @apply bg-primary;
+}
+.noticeWrap .title {
+  @apply text-white shrink-0 font-medium;
+  @apply mr-[8px] text-xs lg:mr-[80px] lg:text-xl;
+}
+.noticeWrap .btn {
+  margin-left: 40px;
+}
+.noticeWrap .notice {
+  height: 2rem;
+  overflow: hidden;
+  @apply h-[1.25rem] lg:h-[2rem] mr-[43px] lg:mr-[0];
+}
+.noticeWrap .notice a,
+.noticeWrap .notice button {
+  display: block;
+  max-width: 340px;
+  @apply truncate text-white text-xs lg:text-xl;
+}
+.noticeWrap .family {
+  @apply border-0 py-[4px] font-medium text-white;
+  @apply w-[120px] pl-[5px] pr-[30px] text-xs lg:w-[240px] lg:pl-[16px] lg:pr-[44px] lg:text-lg;
+  background: transparent url('/images/icon/arrow_down2_white.svg') no-repeat right 16px center;
+}
+.noticeWrap .family option {
+  color: initial;
+}
+
+.logoWrap a,
+.logoWrap button {
+  @apply w-[calc((100%-28px)/3)] lg:w-[auto];
+  text-align: center;
+}
+.logoWrap img {
+  display: inline-block;
+  mix-blend-mode: darken;
+}
+
+.leftBox {
+  @apply mb-[20px] lg:mb-[0]
+}
+.rightBox .linkList {
+  @apply text-xs lg:text-lg mb-[20px] lg:mb-[24px];
+  overflow: hidden;
+}
+.rightBox .linkList a {
+  float: left;
+  @apply mr-[16px] lg:mr-[40px]
+}
+.rightBox .textList {
+  @apply flex flex-wrap;
+}
+.rightBox .textList:not(:last-child) {
+  @apply mb-[4px] lg:mb-[8px]
+}
+.rightBox .textList span {
+  @apply text-xs lg:text-lg text-gray-500;
+}
+.rightBox .textList span:not(:last-child)::after {
+  display: inline-block;
+  content: '';
+  @apply w-[1px] h-[10px] lg:h-[16px] bg-gray-300 mx-[8px] lg:mx-[12px] mt-[-2px];
+  vertical-align: middle;
+}
+.rightBox .textList a,
+.rightBox .textList button {
+  text-underline-position: under;
+}
+
+.floatingBtn {
+  @apply flex flex-col fixed bottom-[20px] gap-[20px];
+  @apply right-[calc(16px+var(--safeArea-r))] lg:right-[calc(60px+var(--safeArea-r))];
+  transition: opacity 0.3s ease, padding 0.3s ease;
+}
+.floatingBtn button,
+.floatingBtn a {
+  @apply flex flex-col items-center justify-center rounded-full bg-white text-10 border border-gray-100;
+  @apply w-[64px] h-[64px] lg:w-[60px] lg:h-[60px];
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* MO */
+@media (max-width: 1023px) {
+  .noticeWrap .family {
+    background-size: 12px;
+    background-position: right 8px center;
+  }
+  .rightBox .linkList a:nth-child(3) {
+    clear: both;
+  }
+  .rightBox .linkList a:nth-child(n+3) {
+    margin-top: 4px;
+  }
+}

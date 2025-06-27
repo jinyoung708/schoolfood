@@ -1,0 +1,10 @@
+.noticeWrap > div {
+  border-top: 1px solid theme('colors.gray.100');
+}
+
+/* MO */
+@media (max-width: 1023px) {
+  .noticeWrap > div {
+    border: none;
+  }
+}
