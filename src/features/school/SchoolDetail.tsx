@@ -11,7 +11,6 @@ import { PostSiblings } from '~/shared/components/post/PostSiblings';
 import { ProductSwiper } from '~/shared/components/post/ProductSwiper';
 import { Subtop } from '~/shared/components/subtop';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import styles from '~/shared/css/School.module.css';
 import { cn } from '~/shared/utils';
 import { AddProductTooltip } from '~/shared/components/modal/AddProductTooltip';
@@ -28,7 +27,7 @@ export const SchoolDetail = () => {
             modules={[Pagination]}
             pagination
             loop
-            className={cn('w-full lg:rounded-[16px]', styles.imgSwuiper)}
+            className={cn('w-full lg:rounded-[16px]', styles.imgSwiper)}
           >
             <SwiperSlide className="relative">
               <img src="/images/img/temp1.jpg" alt="" className="aspect-[860/686] w-full" />

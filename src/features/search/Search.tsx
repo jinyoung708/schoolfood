@@ -11,6 +11,9 @@ import { NoticeBoard } from '../notice/NoticeBoard';
 import styles from '~/shared/css/Search.module.css';
 import { SearchForm } from './SearchForm';
 import { ProductList } from '~/shared/components/List/ProductList';
+import { TipBoard } from '../tip/TipBoard';
+import { QnaBoard } from '../qna/QnaBoard';
+import { ArchiveBoard } from '../archive/ArchiveBoard';
 
 export const Search = () => {
   return (
@@ -145,19 +148,19 @@ export const Search = () => {
           <TabGroup className="basic-tab">
             <TabList className="tab mb-[20px] lg:mb-[24px]">
               <Tab>자료실</Tab>
-              <Tab>교육자료</Tab>
-              <Tab>pop</Tab>
-              <Tab>식단추천</Tab>
+              <Tab>상품사용 꿀팁</Tab>
+              <Tab>Q&A</Tab>
+              <Tab>공지사항</Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
-                <NoticeBoard className={styles.noticeWrap} />
+                <ArchiveBoard className={styles.noticeWrap} />
               </TabPanel>
               <TabPanel>
-                <NoticeBoard className={styles.noticeWrap} />
+                <TipBoard className={styles.noticeWrap} />
               </TabPanel>
               <TabPanel>
-                <NoticeBoard className={styles.noticeWrap} />
+                <QnaBoard className={styles.noticeWrap} />
               </TabPanel>
               <TabPanel>
                 <NoticeBoard className={styles.noticeWrap} />
@@ -180,7 +183,7 @@ export const Search = () => {
                   '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
             <ThumbItem
@@ -193,7 +196,7 @@ export const Search = () => {
                 title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
             <ThumbItem
@@ -206,7 +209,7 @@ export const Search = () => {
                 title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
             <ThumbItem
@@ -219,7 +222,7 @@ export const Search = () => {
                 title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
             <ThumbItem
@@ -232,7 +235,7 @@ export const Search = () => {
                 title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
             <ThumbItem
@@ -245,7 +248,7 @@ export const Search = () => {
                 title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
                 link: '/event/1',
                 commentCount: 21,
-                period: { start: '2023-10-01', end: '2023-10-31', dday: 1 },
+                period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
               }}
             />
           </ThumbList>

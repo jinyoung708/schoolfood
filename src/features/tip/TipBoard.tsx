@@ -22,7 +22,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="상품사용 꿀팁"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -33,7 +33,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -44,7 +44,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -55,7 +55,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -66,7 +66,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -77,7 +77,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -88,7 +88,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -99,7 +99,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -110,7 +110,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>
@@ -121,7 +121,7 @@ export const TipBoard = ({ className }: TipBoardProps) => {
             category="선생님만의 활용레시피"
             title="상품사용 꿀팁 공유"
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={21}
           />
         </li>

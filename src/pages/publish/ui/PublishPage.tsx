@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const PublishPage = () => {
   return (
     <>
@@ -60,9 +62,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">HomeContainer</td>
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features/home/HomeContainer
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -75,9 +77,9 @@ export const PublishPage = () => {
               <td>요청하신 페이지..</td>
               <td className="t_file">Error404Page</td>
               <td className="link">
-                <a href="/error1" target="_blank">
+                <Link to="/error1" target="_blank">
                   /pages/error/ui/Error404Page
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -89,9 +91,9 @@ export const PublishPage = () => {
               <td>일시적으로 서비스..</td>
               <td className="t_file">NetworkErrorPage</td>
               <td className="link">
-                <a href="/error2" target="_blank">
+                <Link to="/error2" target="_blank">
                   /pages/error/ui/NetworkErrorPage
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -103,9 +105,9 @@ export const PublishPage = () => {
               <td>서비스 점검 중..</td>
               <td className="t_file">Maintenance</td>
               <td className="link">
-                <a href="/error3" target="_blank">
+                <Link to="/error3" target="_blank">
                   /pages/error/ui/Maintenance
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -118,9 +120,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">LoginForm</td>
               <td className="link">
-                <a href="/login" target="_blank">
+                <Link to="/login" target="_blank">
                   /features/login/LoginForm
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -133,9 +135,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">JoinForm</td>
               <td className="link">
-                <a href="/join" target="_blank">
+                <Link to="/join" target="_blank">
                   /features/join/JoinForm
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -148,9 +150,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">ModalPopup</td>
               <td className="link">
-                <a href="/modal" target="_blank">
+                <Link to="/modal" target="_blank">
                   /features/modal/ModalPopup
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -163,9 +165,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">PrivacyPolicy</td>
               <td className="link">
-                <a href="/legal/privacy" target="_blank">
+                <Link to="/legal/privacy" target="_blank">
                   /features/legal/PrivacyPolicy
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료 (컨텐츠 X)</td>
             </tr>
@@ -178,9 +180,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">TermsOfService</td>
               <td className="link">
-                <a href="/legal/terms" target="_blank">
+                <Link to="/legal/terms" target="_blank">
                   /features/legal/TermsOfService
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료 (컨텐츠 X)</td>
             </tr>
@@ -193,9 +195,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">LegalNotice</td>
               <td className="link">
-                <a href="/legal/notice" target="_blank">
+                <Link to="/legal/notice" target="_blank">
                   /features/legal/LegalNotice
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료 (컨텐츠 X)</td>
             </tr>
@@ -208,9 +210,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">EmailRejectionPolicy</td>
               <td className="link">
-                <a href="/legal/email" target="_blank">
+                <Link to="/legal/email" target="_blank">
                   /features/legal/EmailRejectionPolicy
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료 (컨텐츠 X)</td>
             </tr>
@@ -230,9 +232,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">CategoryList</td>
               <td className="link">
-                <a href="/category/list" target="_blank">
+                <Link to="/category/list" target="_blank">
                   /features/category/CategoryList
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -244,9 +246,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">CategoryDetail</td>
               <td className="link">
-                <a href="/category/detail" target="_blank">
+                <Link to="/category/detail" target="_blank">
                   /features/category/CategoryDetail
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -267,9 +269,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features//
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -282,9 +284,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features//
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -304,9 +306,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">RecipeList</td>
               <td className="link">
-                <a href="/recipe" target="_blank">
+                <Link to="/recipe" target="_blank">
                   /features/recipe/RecipeList
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -318,9 +320,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">RecipeDetail</td>
               <td className="link">
-                <a href="/recipe/detail" target="_blank">
+                <Link to="/recipe/detail" target="_blank">
                   /features/recipe/RecipeDetail
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -333,9 +335,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">RecipeVideoList</td>
               <td className="link">
-                <a href="/recipe/video" target="_blank">
+                <Link to="/recipe/video" target="_blank">
                   /features/recipe/RecipeVideoList
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -356,9 +358,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features//
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -378,9 +380,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">ArchiveList</td>
               <td className="link">
-                <a href="/archive" target="_blank">
+                <Link to="/archive" target="_blank">
                   /features/archive/ArchiveList
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -392,9 +394,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">ArchiveDetail</td>
               <td className="link">
-                <a href="/archive/detail" target="_blank">
+                <Link to="/archive/detail" target="_blank">
                   /features/archive/ArchiveDetail
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -414,9 +416,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">TipList</td>
               <td className="link">
-                <a href="/tip" target="_blank">
+                <Link to="/tip" target="_blank">
                   /features/tip/TipList
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -428,9 +430,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">TipDetail</td>
               <td className="link">
-                <a href="/tip/detail" target="_blank">
+                <Link to="/tip/detail" target="_blank">
                   /features/tip/TipDetail
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -442,9 +444,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">TipWrite</td>
               <td className="link">
-                <a href="/tip/write" target="_blank">
+                <Link to="/tip/write" target="_blank">
                   /features/tip/TipWrite
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -464,11 +466,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">QnaList</td>
               <td className="link">
-                <a href="/qna" target="_blank">
+                <Link to="/qna" target="_blank">
                   /features/qna/QnaList
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
             <tr>
               <td>상세</td>
@@ -478,11 +480,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">QnaDetail</td>
               <td className="link">
-                <a href="/qna/detail" target="_blank">
+                <Link to="/qna/detail" target="_blank">
                   /features/qna/QnaDetail
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
             <tr>
               <td>글쓰기</td>
@@ -492,9 +494,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">QnaWrite</td>
               <td className="link">
-                <a href="/qna/write" target="_blank">
+                <Link to="/qna/write" target="_blank">
                   /features/qna/QnaWrite
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -514,9 +516,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">SchoolList</td>
               <td className="link">
-                <a href="/school" target="_blank">
+                <Link to="/school" target="_blank">
                   /features/school/SchoolList
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -528,9 +530,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">SchoolDetail</td>
               <td className="link">
-                <a href="/school/detail" target="_blank">
+                <Link to="/school/detail" target="_blank">
                   /features/school/SchoolDetail
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -542,9 +544,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">SchoolWrite</td>
               <td className="link">
-                <a href="/school/write" target="_blank">
+                <Link to="/school/write" target="_blank">
                   /features/school/SchoolWrite
-                </a>
+                </Link>
               </td>
               <td>퍼블 완료</td>
             </tr>
@@ -564,11 +566,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">NoticeList</td>
               <td className="link">
-                <a href="/notice" target="_blank">
+                <Link to="/notice" target="_blank">
                   /features/notice/NoticeList
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
             <tr>
               <td>상세</td>
@@ -578,11 +580,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">NoticeDetail</td>
               <td className="link">
-                <a href="/notice/detail" target="_blank">
+                <Link to="/notice/detail" target="_blank">
                   /features/notice/NoticeDetail
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
 
             {/* 이벤트 */}
@@ -600,11 +602,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">EventList</td>
               <td className="link">
-                <a href="/event" target="_blank">
+                <Link to="/event" target="_blank">
                   /features/event/EventList
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
             <tr>
               <td>종료된 이벤트</td>
@@ -613,11 +615,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">EndedEventList</td>
               <td className="link">
-                <a href="/endedEvent" target="_blank">
+                <Link to="/endedEvent" target="_blank">
                   /features/event/EndedEventList
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
             <tr>
               <td>상세</td>
@@ -627,11 +629,11 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">EventDetail</td>
               <td className="link">
-                <a href="/event/detail" target="_blank">
+                <Link to="/event/detail" target="_blank">
                   /features/event/EventDetail
-                </a>
+                </Link>
               </td>
-              <td />
+              <td>퍼블 완료</td>
             </tr>
 
             {/* 통합검색 */}
@@ -649,9 +651,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file">Search</td>
               <td className="link">
-                <a href="/search" target="_blank">
+                <Link to="/search" target="_blank">
                   /features/search/Search
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -671,9 +673,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features/mypage/
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -685,9 +687,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features/mypage/
-                </a>
+                </Link>
               </td>
               <td />
             </tr>
@@ -699,9 +701,9 @@ export const PublishPage = () => {
               <td />
               <td className="t_file" />
               <td className="link">
-                <a href="/" target="_blank">
+                <Link to="/" target="_blank">
                   /features/mypage/
-                </a>
+                </Link>
               </td>
               <td />
             </tr>

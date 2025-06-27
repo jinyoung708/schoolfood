@@ -19,7 +19,11 @@ export const RecipeList = () => {
       <div className="flex flex-col gap-[30px] lg:gap-[80px] pt-[16px] lg:pt-0">
         <Subtop pageTitle="추천 레시피" breadcrumb={['HOME', '레시피', '추천 레시피']} />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="flex items-center lg:h-[40px]">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

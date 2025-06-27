@@ -30,8 +30,8 @@ export const NetworkErrorPage = () => {
               </p>
             </div>
             <div className="flex gap-[8px] w-full max-w-[756px] mx-auto mt-[40px] lg:mt-[80px]">
-              <Button className="btn-border-primary btn-xl flex-1">새로고침</Button>
-              <Button className="btn-primary btn-xl flex-1">메인으로</Button>
+              <Button className="btn-border-primary btn-xl flex-1 px-[10px]">새로고침</Button>
+              <Button className="btn-primary btn-xl flex-1 px-[10px]">메인으로</Button>
             </div>
           </div>
         </div>

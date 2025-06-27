@@ -21,9 +21,9 @@ export const CategoryList = () => {
         />
         <ListTopContainer
           leftChildren={
-            <div className="flex flex-col gap-[16px] lg:gap-[20px]">
+            <div className="flex flex-col gap-[8px] lg:gap-[12px]">
               <ListTotalCount count={100} type="product" />
-              <div className="flex items-center gap-[4px] lg:gap-[8px]">
+              <div className="flex items-center gap-[4px] lg:gap-[8px] h-[40px]">
                 <p className="text-sm lg:text-base">VAT 포함</p>
                 <ComSwitch checked={enabled} onChange={setEnabled} />
               </div>

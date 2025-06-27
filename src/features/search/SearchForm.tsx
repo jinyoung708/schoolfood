@@ -48,7 +48,7 @@ export const SearchForm = () => {
         </Button>
       </div>
       <p className="mt-[30px] lg:mt-[60px] text-22 lg:text-34 font-medium text-center">
-        <span className="text-secondary">‘떡갈비’</span> 에 대한 검색어로 31건의
+        <span className="text-secondary">‘떡갈비’</span> 에 대한 검색어로 31건의<span>&nbsp;</span>
         <br className="block lg:hidden" />
         검색 결과가 있습니다
       </p>

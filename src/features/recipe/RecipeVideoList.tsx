@@ -19,7 +19,11 @@ export const RecipeVideoList = () => {
       <div className="flex flex-col gap-[30px] lg:gap-[80px] pt-[16px] lg:pt-0">
         <Subtop pageTitle="동영상 레시피" breadcrumb={['HOME', '레시피', '동영상 레시피']} />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="lg:h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

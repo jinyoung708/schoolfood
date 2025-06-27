@@ -23,7 +23,11 @@ export const QnaList = () => {
           submenu={['Q&A', '튼튼스쿨에 바라는점']}
         />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

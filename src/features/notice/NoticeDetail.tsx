@@ -22,7 +22,7 @@ export const NoticeDetail = () => {
           </TextBadge>
         }
         created={{
-          at: '2023-10-01',
+          at: '2023.10.01',
         }}
       />
       <PostContent className="mt-[30px] lg:mt-[120px]" />

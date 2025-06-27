@@ -56,7 +56,7 @@ export const LoginForm = () => {
         </Mobile>
         <p className="text-sm text-gray-500 mt-[16px] lg:mt-[40px] text-center">
           아직 튼튼스쿨 회원이 아니신가요?{' '}
-          <Link to="/join" className="text-primary font-medium">
+          <Link to="" className="text-primary font-medium">
             회원가입
           </Link>
         </p>

@@ -24,7 +24,11 @@ export const ArchiveList = () => {
           submenu={['자료실', '교육자료', 'POP', '식단추천']}
         />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="lg:h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

@@ -23,7 +23,11 @@ export const SchoolList = () => {
           breadcrumb={['HOME', '커뮤니티', '우리학교 급식자랑']}
         />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

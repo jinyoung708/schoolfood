@@ -17,7 +17,7 @@ export const QnaDetail = () => {
         title="Q&A 상세 페이지"
         created={{
           by: '사용자1',
-          at: '2023-10-01 12:36',
+          at: '2023.10.01 12:36',
         }}
         commentCount={10}
       />

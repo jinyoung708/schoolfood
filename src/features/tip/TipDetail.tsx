@@ -17,7 +17,7 @@ export const TipDetail = () => {
         title="상품사용 꿀팁 페이지"
         created={{
           by: '사용자1',
-          at: '2023-10-01 12:36',
+          at: '2023.10.01 12:36',
         }}
         commentCount={10}
       />

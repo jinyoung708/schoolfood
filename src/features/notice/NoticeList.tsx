@@ -9,7 +9,6 @@ import { ListTotalCount } from '~/shared/components/List/ListTotalCount';
 import { Subtop } from '~/shared/components/subtop';
 import { NoticeBoard } from './NoticeBoard';
 import { ComPagination } from '~/shared/ui/ComPagination';
-import { WriteBtn } from '~/shared/components/button/WriteBtn';
 
 export const NoticeList = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -22,7 +21,12 @@ export const NoticeList = () => {
           submenu={['공지', 'FAQ']}
         />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            // <div className="h-[40px] flex items-center"> <- 글쓰기 버튼 있을 경우 사용
+            <div className="lg:h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}
@@ -30,7 +34,8 @@ export const NoticeList = () => {
               onClick={() => {}}
             />
           }
-          rightChildren={<WriteBtn />}
+          // 시안에는 글쓰기 버튼이 있지만 기획 상 글쓰기 버튼이 없어 없는 기준으로 작업함. 글쓰기 버튼이 들어 갈 경우 ListTopContainer의 leftChildren의 자식의 스타일 수정 필요
+          // rightChildren={<WriteBtn />}
         />
       </div>
       <div className="flex flex-col gap-[40px] lg:gap-[60px] mt-[20px] lg:mt-[18px]">

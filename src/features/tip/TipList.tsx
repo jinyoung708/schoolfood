@@ -23,7 +23,11 @@ export const TipList = () => {
           submenu={['상품사용 꿀팁', '선생님만의 활용레시피']}
         />
         <ListTopContainer
-          leftChildren={<ListTotalCount count={100} type="post" />}
+          leftChildren={
+            <div className="h-[40px] flex items-center">
+              <ListTotalCount count={100} type="post" />
+            </div>
+          }
           searchChildren={
             <ListSearchInput
               value={searchValue}

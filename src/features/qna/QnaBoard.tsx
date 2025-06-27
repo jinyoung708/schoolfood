@@ -22,7 +22,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다.Q&A 게시판 제목입니다.Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
             isPinned
           />
@@ -34,7 +34,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다. Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
             isNew
           />
@@ -46,7 +46,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -57,7 +57,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -68,7 +68,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -79,7 +79,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -90,7 +90,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -101,7 +101,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -112,7 +112,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
@@ -123,7 +123,7 @@ export const QnaBoard = ({ className }: QnaBoardProps) => {
             category="Q&A"
             title="Q&A 게시판 제목입니다."
             createdBy="사용자1"
-            createdAt="2023-10-01 12:36"
+            createdAt="2023.10.01 12:36"
             commentCount={5}
           />
         </li>
