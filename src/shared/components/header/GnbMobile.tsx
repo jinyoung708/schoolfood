@@ -159,7 +159,7 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                 <ul className={cn(styles.menuDepth2, styles.category)}>
                   <ToggleList title="육가공" icon="category1">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/publish">publish</Link>
                     </li>
                     <li>
                       <Link to="/">3DEPTH</Link>
@@ -266,19 +266,10 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                     <Link to="/tip">상품사용 꿀팁</Link>
                   </li>
                   <li>
-                    <Link to="/tip/write">상품사용 꿀팁 글쓰기</Link>
-                  </li>
-                  <li>
                     <Link to="/qna">Q&A</Link>
                   </li>
                   <li>
-                    <Link to="/qna/write">Q&A 글쓰기</Link>
-                  </li>
-                  <li>
                     <Link to="/school">우리학교 급식자랑</Link>
-                  </li>
-                  <li>
-                    <Link to="/school/write">우리학교 급식자랑 글쓰기</Link>
                   </li>
                   <li>
                     <Link to="/notice">공지사항</Link>
@@ -292,9 +283,6 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                   </li>
                   <li>
                     <Link to="/endedEvent">지난 이벤트</Link>
-                  </li>
-                  <li>
-                    <Link to="/modal">모달</Link>
                   </li>
                 </ul>
               )}
