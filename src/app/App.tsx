@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Routes from '~/routes/Router';
 import { useApiError } from './error/useApiError';
 import { useNetworkOffline } from './error/useNetworkOffline';
@@ -37,10 +37,10 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <HeaderProvider>
         {isNetworkOffline && <NetworkErrorPage />}
-        <HashRouter>
+        <BrowserRouter>
           <PageTitleUpdater />
           <Routes />
-        </HashRouter>
+        </BrowserRouter>
       </HeaderProvider>
     </QueryClientProvider>
   );
