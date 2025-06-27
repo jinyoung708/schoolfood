@@ -4,12 +4,12 @@
   margin-bottom: 32px;
 }
 .titleBox .title1 {
-  font-family: "CJ ONLYONE NEW title";
+  font-family: 'CJ ONLYONE NEW title';
   font-weight: 500;
   @apply text-2xl text-primary;
 }
 .titleBox .title2 span {
-  font-family: "CJ ONLYONE NEW title";
+  font-family: 'CJ ONLYONE NEW title';
   font-weight: 700;
   @apply text-34;
 }
@@ -57,30 +57,19 @@
   @apply text-gray-300;
 }
 
-
 /* 레시피 */
 .recipeWrapper {
   background: url('/images/img/wave.png') repeat-x 0 0;
   padding-bottom: 38px;
 }
 .recipeWrapper :global(.swiper-pagination-horizontal.swiper-pagination-bullets) {
+  position: absolute;
+  bottom: -38px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 0;
-  bottom: -38px;
   width: 62.43%;
   text-align: center;
-  gap: 12px;
-}
-.recipeWrapper :global(.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet) {
-  margin: 0;
-  @apply transition-all rounded-full;
-}
-.recipeWrapper :global(.swiper-pagination-bullet-active) {
-  width: 24px;
-  @apply bg-secondary;
 }
 .imgSwiperWrap {
   position: relative;
@@ -147,7 +136,7 @@
     margin-bottom: 20px;
     gap: 4px;
   }
-  .titleBox .title1  {
+  .titleBox .title1 {
     @apply text-sm;
   }
   .titleBox .title2 span {
@@ -157,7 +146,7 @@
     @apply text-sm;
     gap: 2px;
   }
-  
+
   /* 비주얼 */
   .visualControls {
     right: 20px;
@@ -216,7 +205,7 @@
   /* 숏폼 레시피 */
   .shortformWrapper {
     padding-top: 48px;
-    background-size: auto 356px
+    background-size: auto 356px;
   }
   .shortformWrapper .titleBox {
     padding: 0 16px;

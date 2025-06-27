@@ -24,7 +24,6 @@ export const CategoryContentContainer = ({ className }: CategoryContentProps) =>
   const prdVideoRef = useRef<HTMLDivElement>(null);
   const prdReviewRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState('상품정보');
-  const [, setIsTabSticky] = useState(false);
   const { isHeaderFixed, isCategoryTabFixed, setIsCategoryTabFixed } = useHeaderContext();
 
   // 1. 섹션 정보 정의
@@ -49,7 +48,6 @@ export const CategoryContentContainer = ({ className }: CategoryContentProps) =>
     stickyTopMobile: OFFSETS.mobile.tabTop,
     scrollOffsetPc: OFFSETS.pc.fixed.scrollOffset,
     scrollOffsetMobile: OFFSETS.mobile.scrollOffset,
-    setIsTabSticky,
     setIsCategoryTabFixed,
     setActiveTab,
     isHeaderFixed,

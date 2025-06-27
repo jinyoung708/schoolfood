@@ -5,11 +5,15 @@
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import { Link } from 'react-router-dom';
+import { FreeMode } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { cn } from '~/shared/utils';
 import { RatioImage } from '../RatioImage';
 import { Icon } from '../Icon';
 import styles from '~/shared/css/Home.module.css';
 import { Mobile, PC } from '../Responsive';
+import 'swiper/css';
+import 'swiper/css/free-mode';
 
 export const Community = () => {
   return (
@@ -36,9 +40,27 @@ export const Community = () => {
       </div>
       <TabGroup className="basic-tab">
         <TabList className="tab mb-[20px] lg:mb-[24px]">
-          <Tab>우리학교 급식자랑</Tab>
-          <Tab>상품사용 꿀팁</Tab>
-          <Tab>자주묻는 질문</Tab>
+          <Swiper
+            spaceBetween={12}
+            slidesPerView="auto"
+            freeMode
+            modules={[FreeMode]}
+            className="mx-0"
+          >
+            {['우리학교 급식자랑', '상품사용 꿀팁', '자주묻는 질문'].map((label, idx) => (
+              <SwiperSlide key={idx} style={{ width: 'auto' }}>
+                <Tab
+                  className={({ selected }) =>
+                    selected
+                      ? 'px-4 py-2 bg-blue-500 text-white rounded-full'
+                      : 'px-4 py-2 bg-gray-100 text-gray-600 rounded-full'
+                  }
+                >
+                  {label}
+                </Tab>
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <PC>
             <Link to="/" className="btnAll">
               전체보기

@@ -31,7 +31,7 @@ export const RatioImage = ({
   const aspectClass = `aspect-[${ratio}]`;
 
   return (
-    <div className={cn(aspectClass, 'w-full overflow-hidden', className)}>
+    <div className={cn(aspectClass, 'w-full overflow-hidden bg-[#f1f1f1]', className)}>
       <img
         src={src}
         alt={alt}

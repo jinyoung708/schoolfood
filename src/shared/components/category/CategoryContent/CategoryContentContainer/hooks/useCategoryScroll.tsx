@@ -8,7 +8,6 @@ interface UseCategoryScrollProps {
   stickyTopMobile: number;
   scrollOffsetPc: number;
   scrollOffsetMobile: number;
-  setIsTabSticky?: (val: boolean) => void;
   setIsCategoryTabFixed?: (val: boolean) => void;
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
   isHeaderFixed?: boolean;
@@ -21,7 +20,6 @@ export const useCategoryScroll = ({
   stickyTopMobile,
   scrollOffsetPc,
   scrollOffsetMobile,
-  setIsTabSticky,
   setIsCategoryTabFixed,
   setActiveTab,
   isHeaderFixed,
@@ -32,8 +30,7 @@ export const useCategoryScroll = ({
       const stickyTopValue = isPc ? stickyTopPc : stickyTopMobile;
 
       if (tabContainerRef.current) {
-        const isSticky = tabContainerRef.current.getBoundingClientRect().top <= stickyTopValue;
-        setIsTabSticky?.(isSticky);
+        const isSticky = tabContainerRef.current.getBoundingClientRect().top <= stickyTopValue + 1;
         setIsCategoryTabFixed?.(isSticky);
       }
 
@@ -61,7 +58,6 @@ export const useCategoryScroll = ({
     stickyTopMobile,
     scrollOffsetPc,
     scrollOffsetMobile,
-    setIsTabSticky,
     setIsCategoryTabFixed,
     setActiveTab,
     isHeaderFixed,

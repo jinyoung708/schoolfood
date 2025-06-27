@@ -20,7 +20,7 @@
  *   category="공지사항"
  *   title="게시판 제목입니다."
  *   createdBy="홍길동"
- *   createdAt="2023-10-01 12:36"
+ *   createdAt="2023.10.01 12:36"
  *   commentCount={5}
  *   hasAttachments
  *   isNew

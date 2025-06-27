@@ -28,9 +28,9 @@
  *     title: '영상 제목',
  *     desc: '영상 설명',
  *     link: '/video/1',
- *     created: { at: '2023-10-01', by: '작성자' },
+ *     created: { at: '2023.10.01', by: '작성자' },
  *     commentCount: 10,
- *     period: { start: '2023-10-01', end: '2023-10-31', dday: 5 },
+ *     period: { start: '2023.10.01', end: '2023.10.31', dday: 5 },
  *   }}
  *   className="custom-class"
  * />
@@ -76,7 +76,7 @@ export const VideoItem = ({
   return (
     <div className={cn(className)}>
       <div className="flex flex-col gap-[16px] lg:gap-[24px]">
-        <div className="relative overflow-hidden rounded-[8px]">
+        <div className="relative overflow-hidden rounded-[8px] text-[0px]">
           <YoutubePlayer videoId={thumb.videoId} ratio={thumb.ratio} info={false} />
           {thumb.dimmedText && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">

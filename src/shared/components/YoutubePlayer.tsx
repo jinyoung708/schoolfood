@@ -41,7 +41,7 @@ export const YoutubePlayer = ({
     <>
       <Button
         className={cn(
-          'relative w-full h-full cursor-pointer overflow-hidden bg-cover bg-center',
+          'relative w-full h-full cursor-pointer overflow-hidden bg-cover bg-center bg-no-repeat',
           aspectClass,
           className,
         )}

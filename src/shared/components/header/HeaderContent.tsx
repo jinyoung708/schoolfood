@@ -63,10 +63,18 @@ export const HeaderContent = () => {
                   {isHeaderFixed && (
                     <DropdownContent>
                       <div className="bg-white mt-2 px-4 py-3 rounded-lg border border-gray-100 shadow-lg flex flex-col">
-                        <Link to="/">관심상품</Link>
-                        <Link to="/">작성한 글</Link>
-                        <Link to="/">개인정보 수정</Link>
-                        <Link to="/">로그아웃</Link>
+                        <Link to="/" className="text-sm text-gray-500">
+                          관심상품
+                        </Link>
+                        <Link to="/" className="text-sm text-gray-500">
+                          작성한 글
+                        </Link>
+                        <Link to="/" className="text-sm text-gray-500">
+                          개인정보 수정
+                        </Link>
+                        <Link to="/" className="text-sm text-gray-500">
+                          로그아웃
+                        </Link>
                       </div>
                     </DropdownContent>
                   )}

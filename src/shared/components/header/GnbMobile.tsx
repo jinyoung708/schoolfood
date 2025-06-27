@@ -23,7 +23,7 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
   const [activeIndex, setActiveIndex] = useState<number>(1);
   const { searchActive, toggleSearch } = useHeaderContext();
   const isActive = (index: number) => (activeIndex === index ? styles.active : '');
-  const login = false; // 로그인 여부 (임시)
+  const login = true; // 로그인 여부 (임시)
 
   useScrollLock(menuOpen, 'mo');
 
@@ -116,9 +116,7 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                     <span className="font-medium text-gray-800">로그인</span>하고 회원 전용 혜택을
                     받아보세요
                   </p>
-                  <Link to="/login" className="btn-sm btn-primary ml-auto">
-                    로그인
-                  </Link>
+                  <Button className="btn-sm btn-primary ml-auto">로그인</Button>
                 </>
               )}
             </div>
@@ -159,7 +157,7 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                 <ul className={cn(styles.menuDepth2, styles.category)}>
                   <ToggleList title="육가공" icon="category1">
                     <li>
-                      <Link to="/publish">publish</Link>
+                      <Link to="/">3DEPTH</Link>
                     </li>
                     <li>
                       <Link to="/">3DEPTH</Link>
@@ -233,20 +231,20 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
               {isActive(2) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/category/list">메인상품</Link>
+                    <Link to="/">메인상품</Link>
                   </li>
                   <li>
-                    <Link to="/category/list">신상품</Link>
+                    <Link to="/">신상품</Link>
                   </li>
                 </ul>
               )}
               {isActive(3) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/recipe">추천 레시피</Link>
+                    <Link to="/">추천 레시피</Link>
                   </li>
                   <li>
-                    <Link to="/recipe/video">동영상 레시피</Link>
+                    <Link to="/">동영상 레시피</Link>
                   </li>
                 </ul>
               )}
@@ -260,29 +258,29 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
               {isActive(5) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/archive">자료실</Link>
+                    <Link to="/">자료실</Link>
                   </li>
                   <li>
-                    <Link to="/tip">상품사용 꿀팁</Link>
+                    <Link to="/">상품사용 꿀팁</Link>
                   </li>
                   <li>
-                    <Link to="/qna">Q&A</Link>
+                    <Link to="/">Q&A</Link>
                   </li>
                   <li>
-                    <Link to="/school">우리학교 급식자랑</Link>
+                    <Link to="/">우리학교 급식자랑</Link>
                   </li>
                   <li>
-                    <Link to="/notice">공지사항</Link>
+                    <Link to="/">공지사항</Link>
                   </li>
                 </ul>
               )}
               {isActive(6) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/event">진행중 이벤트</Link>
+                    <Link to="/">진행중 이벤트</Link>
                   </li>
                   <li>
-                    <Link to="/endedEvent">지난 이벤트</Link>
+                    <Link to="/">지난 이벤트</Link>
                   </li>
                 </ul>
               )}

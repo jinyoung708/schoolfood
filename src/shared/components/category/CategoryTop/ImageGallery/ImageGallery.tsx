@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Controller, EffectFade } from 'swiper/modules';
+import { Controller, EffectFade, FreeMode } from 'swiper/modules';
 import type { Swiper as SwiperInstance } from 'swiper';
 import 'swiper/css';
 import { RatioImage } from '../../../RatioImage';
@@ -25,7 +25,8 @@ export const ImageGallery = ({ items }: ImageGalleryProps) => {
       {/* pagination thumbs slide */}
       <div className="lg:w-[21.875%] lg:h-full lg:absolute lg:top-0 lg:left-0">
         <Swiper
-          modules={[Controller]}
+          modules={[Controller, FreeMode]}
+          freeMode
           onSwiper={(swiper) => setThumbSwiper(swiper)}
           slidesPerView={4}
           spaceBetween={8}

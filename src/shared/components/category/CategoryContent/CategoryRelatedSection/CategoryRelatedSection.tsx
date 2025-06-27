@@ -1,7 +1,18 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { CategorySectionTitle } from '../common/CategorySectionTitle';
 import { ThumbItem } from '~/shared/components/List/ThumbItem';
 import { cn } from '~/shared/utils';
+import styled from 'styled-components';
+
+const StyledSwiper = styled(Swiper)`
+  .swiper-pagination {
+    position: static;
+    margin-top: 32px;
+  }
+`;
 
 interface CategoryRelatedSectionProps {
   className?: string;
@@ -12,14 +23,17 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
     <div className={cn('flex flex-col gap-[12px] lg:gap-[24px]', className)}>
       <CategorySectionTitle>연관 레시피</CategorySectionTitle>
       <div className="-mx-[16px] lg:mx-0">
-        <Swiper
+        <StyledSwiper
+          modules={[Pagination]}
+          pagination
           spaceBetween={24}
           breakpoints={{
             1024: {
               slidesPerView: 3,
+              pagination: false,
             },
           }}
-          className="w-full px-[16px] lg:px-0"
+          className={cn('w-full px-[16px] lg:px-0')}
         >
           <SwiperSlide>
             <ThumbItem
@@ -66,7 +80,7 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
               }}
             />
           </SwiperSlide>
-        </Swiper>
+        </StyledSwiper>
       </div>
     </div>
   );

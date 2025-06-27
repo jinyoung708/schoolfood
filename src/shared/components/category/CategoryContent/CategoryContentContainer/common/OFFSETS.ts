@@ -13,6 +13,6 @@ export const OFFSETS = {
   mobile: {
     tabTop: 60,
     scrollOffset: 120,
-    scrollMarginTop: 120,
+    scrollMarginTop: 112,
   },
 };

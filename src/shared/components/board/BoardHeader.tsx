@@ -12,7 +12,7 @@ import { cn } from '~/shared/utils';
 import { boardColumnWidth } from './columnWIdth';
 
 interface BoardHeaderProps {
-  type?: 'default' | 'notice' | 'mypage' | 'search';
+  type?: 'default' | 'notice' | 'mypage' | 'archive';
   className?: string;
 }
 
@@ -82,7 +82,7 @@ export const BoardHeader = ({ type = 'default', className }: BoardHeaderProps) =
         {type === 'notice' && <Attachments />}
         {(type === 'default' || type === 'mypage') && <CommentCount />}
         {type === 'default' && <CreatedBy />}
-        {(type === 'default' || type === 'mypage' || type === 'search') && <CreatedAt />}
+        {(type === 'default' || type === 'mypage' || type === 'archive') && <CreatedAt />}
         {type === 'notice' && <PostedAt />}
       </div>
     </div>

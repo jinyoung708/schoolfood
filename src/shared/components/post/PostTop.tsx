@@ -14,8 +14,8 @@
  *   category="공지사항"
  *   title="게시글 제목입니다."
  *   desc="게시글 설명입니다."
- *   created={{ at: '2023-10-01', by: '홍길동' }}
- *   period={{ start: '2023-10-01', end: '2023-10-31', dday: 5 }}
+ *   created={{ at: '2023.10.01', by: '홍길동' }}
+ *   period={{ start: '2023.10.01', end: '2023.10.31', dday: 5 }}
  *   commentCount={10}
  *   className="my-custom-class"
  * />

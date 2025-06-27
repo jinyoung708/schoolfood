@@ -26,9 +26,9 @@
  *      title: '레시피 제목',
  *      desc: '레시피 설명',
  *      link: '/recipe/1',
- *      created: { at: '2023-10-01', by: '작성자' },
+ *      created: { at: '2023.10.01', by: '작성자' },
  *      commentCount: 10,
- *      period: { start: '2023-10-01', end: '2023-10-31', dday: 5 },
+ *      period: { start: '2023.10.01', end: '2023.10.31', dday: 5 },
  *    }}
  *    className="custom-class"
  *  />

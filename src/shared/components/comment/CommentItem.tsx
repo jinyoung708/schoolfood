@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode } from 'swiper/modules';
 import { CommentPopover } from './CommentPopover';
 import 'swiper/css';
 import { RatioImage } from '../RatioImage';
@@ -39,6 +40,8 @@ export const CommentItem = ({
       {images && images.length > 0 && (
         <div className="w-[calc(100%+32px)] lg:w-full mx-[-16px] lg:mx-0 relative">
           <Swiper
+            modules={[FreeMode]}
+            freeMode
             slidesPerView="auto"
             spaceBetween={8}
             slidesOffsetBefore={16}
@@ -61,7 +64,7 @@ export const CommentItem = ({
               >
                 <button className="block" type="button" onClick={toggleImageSize}>
                   <span className="sr-only">이미지 확대</span>
-                  <RatioImage src={image} ratio="1/1" />
+                  <RatioImage src={image} ratio="1/1" isContain />
                 </button>
               </SwiperSlide>
             ))}

@@ -1,23 +1,14 @@
-.imgSwuiper :global(.swiper-pagination) {
-  @apply bottom-[20px] lg:bottom-[30px] text-[0]
-}
-.imgSwuiper :global(.swiper-pagination-bullet) {
-  @apply w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-gray-400 opacity-100 rounded-full;
-}
-.imgSwuiper :global(.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet) {
-  @apply mx-[2px] lg:mx-[6px];
-}
-.imgSwuiper :global(.swiper-pagination-bullet-active) {
-  @apply w-[18px] lg:w-[24px] bg-secondary;
+.imgSwiper :global(.swiper-pagination) {
+  @apply bottom-[20px] lg:bottom-[30px] text-[0];
 }
 
 .productSwiper {
   position: static;
 }
 .productSwiper::after {
-  @apply hidden lg:block absolute w-[100px] h-full right-0 top-0 z-[1]; 
+  @apply hidden lg:block absolute w-[100px] h-full right-0 top-0 z-[1];
   content: '';
-  background: linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,255,1));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 .productSwiper.end::after {
   z-index: -1;
