@@ -37,7 +37,7 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <HeaderProvider>
         {isNetworkOffline && <NetworkErrorPage />}
-        <BrowserRouter>
+        <BrowserRouter basename="/schoolfood">
           <PageTitleUpdater />
           <Routes />
         </BrowserRouter>
