@@ -5,11 +5,12 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/schoolfood/',
   plugins: [react(), svgr()],
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './src'),
-      '@images': path.resolve(__dirname, './public/images'),
+      '@images': path.resolve(__dirname, './schoolfood/public/images'),
     },
   },
   build: {
