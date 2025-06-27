@@ -6,7 +6,7 @@
       const pathname = location.pathname.replace('/schoolfood', '');
       const search = location.search;
       const hash = location.hash;
-      location.replace('/schoolfood/' + '?' + 'redirect=' + encodeURIComponent(pathname + search + hash));
+      location.replace('/schoolfood/?redirect=' + encodeURIComponent(pathname + search + hash));
     </script>
   </head>
   <body></body>
