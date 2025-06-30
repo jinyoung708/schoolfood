@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      const pathname = location.pathname.replace('/schoolfood', '');
+      const search = location.search;
+      const hash = location.hash;
+      location.replace('/schoolfood/' + '?' + 'redirect=' + encodeURIComponent(pathname + search + hash));
+    </script>
+  </head>
+  <body></body>
+</html>
