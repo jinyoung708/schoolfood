@@ -37,7 +37,7 @@ export const EventList = () => {
         <ThumbList>
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -51,7 +51,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -64,7 +64,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -77,7 +77,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -90,7 +90,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -103,7 +103,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -116,7 +116,7 @@ export const EventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}

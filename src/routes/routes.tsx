@@ -100,7 +100,7 @@ export const routes: CustomRouteObject[] = [
       { path: '/recipe/video', title: '동영상 레시피', element: <RecipeVideoListPage /> },
 
       // 월별 행사지
-      { path: '/monthly', element: <MonthlyEventPage /> },
+      { path: '/monthly', title: '월별 행사지', element: <MonthlyEventPage /> },
 
       // 자료실
       { path: '/archive', title: '자료실', element: <ArchiveListPage /> },

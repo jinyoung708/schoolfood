@@ -42,7 +42,7 @@ export const ArchiveList = () => {
         <ThumbList pcCol={3}>
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -62,7 +62,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -82,7 +82,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -99,7 +99,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -120,7 +120,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -141,7 +141,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -162,7 +162,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -183,7 +183,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}
@@ -204,7 +204,7 @@ export const ArchiveList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
             }}

@@ -30,7 +30,7 @@ export const SchoolDetail = () => {
             className={cn('w-full lg:rounded-[16px]', styles.imgSwiper)}
           >
             <SwiperSlide className="relative">
-              <img src="/schoolfood/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
+              <img src="/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
               <AddProductTooltip
                 left={17}
                 top={64}
@@ -54,7 +54,7 @@ export const SchoolDetail = () => {
               />
             </SwiperSlide>
             <SwiperSlide className="relative">
-              <img src="/schoolfood/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
+              <img src="/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
               <AddProductTooltip
                 left={61.5}
                 top={25}
@@ -64,7 +64,7 @@ export const SchoolDetail = () => {
               />
             </SwiperSlide>
             <SwiperSlide className="relative">
-              <img src="/schoolfood/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
+              <img src="/images/img/temp1.jpg" alt="" className="aspect-[4/3] w-full" />
               <AddProductTooltip
                 left={38}
                 top={63}

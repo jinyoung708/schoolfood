@@ -33,7 +33,7 @@ export const EndedEventList = () => {
         <ThumbList>
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -48,7 +48,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -63,7 +63,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -78,7 +78,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -93,7 +93,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -108,7 +108,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',
@@ -123,7 +123,7 @@ export const EndedEventList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/recipe01.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
               ratio: '16/9',
               dimmedText: '종료된 이벤트',

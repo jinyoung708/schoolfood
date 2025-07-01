@@ -35,14 +35,14 @@ export const SchoolList = () => {
               onClick={() => {}}
             />
           }
-          rightChildren={<WriteBtn to="/school/write" />}
+          rightChildren={<WriteBtn />}
         />
       </div>
       <div className="flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[18px]">
         <ThumbList>
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -56,7 +56,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -69,7 +69,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -83,7 +83,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -96,7 +96,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -110,7 +110,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -123,7 +123,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}
@@ -137,7 +137,7 @@ export const SchoolList = () => {
           />
           <ThumbItem
             thumb={{
-              src: '/schoolfood/images/img/temp1.jpg',
+              src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}

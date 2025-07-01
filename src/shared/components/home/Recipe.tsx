@@ -79,7 +79,7 @@ export const Recipe = () => {
               <SwiperSlide>
                 <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/images/img/recipe01.jpg"
+                    src="/images/img/recipe01.jpg"
                     alt="마라 수혈이 필요할 때 마파두부 덮밥"
                     className="w-full h-full object-cover"
                   />
@@ -88,7 +88,7 @@ export const Recipe = () => {
               <SwiperSlide>
                 <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/images/img/recipe02.jpg"
+                    src="/images/img/recipe02.jpg"
                     alt="부담 없는 두부면 팟타이"
                     className="w-full h-full object-cover"
                   />
@@ -97,7 +97,7 @@ export const Recipe = () => {
               <SwiperSlide>
                 <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/images/img/recipe03.jpg"
+                    src="/images/img/recipe03.jpg"
                     alt="톡톡 터지는 단짠 새콤함 옥수수 살사"
                     className="w-full h-full object-cover"
                   />
@@ -141,7 +141,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product02.jpg"
+                          src="/images/img/product02.jpg"
                           ratio="1/1"
                           alt="고메 탕수육"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -155,7 +155,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product03.jpg"
+                          src="/images/img/product03.jpg"
                           ratio="1/1"
                           alt="단단한 큰 두부"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -169,7 +169,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product04.jpg"
+                          src="/images/img/product04.jpg"
                           ratio="1/1"
                           alt="프리미엄 굴소스"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -209,7 +209,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product01.jpg"
+                          src="/images/img/product01.jpg"
                           ratio="1/1"
                           alt="고단백 두부면"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -223,7 +223,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product02.jpg"
+                          src="/images/img/product02.jpg"
                           ratio="1/1"
                           alt="1+등급 건강란"
                           className="rounded-[8px] lg:rounded-[16px]"
@@ -237,7 +237,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product05.jpg"
+                          src="/images/img/product05.jpg"
                           ratio="1/1"
                           alt="바질 토마토 소스"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -278,7 +278,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product03.jpg"
+                          src="/images/img/product03.jpg"
                           ratio="1/1"
                           alt="이츠웰 스위트콘"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -292,7 +292,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product04.jpg"
+                          src="/images/img/product04.jpg"
                           ratio="1/1"
                           alt="백설 허브맛솔트"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -306,7 +306,7 @@ export const Recipe = () => {
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
                       <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/images/img/product05.jpg"
+                          src="/images/img/product05.jpg"
                           ratio="1/1"
                           alt="백설 쌀올리고당"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"

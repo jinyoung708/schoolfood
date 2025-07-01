@@ -40,7 +40,7 @@ export const TipList = () => {
               <div className="hidden lg:block">
                 <ToggleOption sortOptions={['10개씩', 'n개씩']} />
               </div>
-              <WriteBtn to="/tip/write" />
+              <WriteBtn />
             </div>
           }
         />

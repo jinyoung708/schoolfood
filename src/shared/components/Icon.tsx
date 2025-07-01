@@ -4,7 +4,7 @@ import { cn } from '../utils';
  * Component: Icon.tsx
  * Description: 아이콘 이미지를 렌더링하는 컴포넌트
  * Props:
- *  - src?: string (아이콘 이미지 파일명, `/schoolfood/images/icon/` 경로 기준)
+ *  - src?: string (아이콘 이미지 파일명, `/images/icon/` 경로 기준)
  *  - width?: number (아이콘 너비, 기본 'auto')
  *  - height?: number (아이콘 높이, 기본 'auto')
  *  - alt?: string (이미지 alt 텍스트)
@@ -31,7 +31,7 @@ export const Icon = ({ width, height, src, alt = '', className }: IconProps) => 
 
   return (
     <img
-      src={`/schoolfood/images/icon/${src}`}
+      src={`/images/icon/${src}`}
       alt={alt}
       className={cn('object-contain', className)}
       style={style}

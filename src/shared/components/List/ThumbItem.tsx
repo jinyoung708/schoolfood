@@ -17,7 +17,7 @@
  * Usage:
  *   <ThumbItem
  *     thumb={{
- *       src: '/schoolfood/images/img/recipe01.jpg',
+ *       src: '/images/img/recipe01.jpg',
  *       alt: '레시피 썸네일',
  *       ratio: '16/9',
  *       isContain: true,

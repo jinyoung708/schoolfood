@@ -2,10 +2,20 @@
  * Component: InputRadio.tsx
  * Description: 라디오 버튼 입력 컴포넌트
  * Props:
+ *  - label?: string (라벨 텍스트)
+ *  - required?: boolean (필수 항목 여부)
  *  - options: string[] (라디오 버튼 항목 리스트)
  *  - defaultValue?: string (기본 선택값, 생략 시 첫 번째 항목 선택)
+ *  - className?: string (추가 스타일 클래스)
+ *  - name?: string (radio 그룹의 name 속성, 고유해야 그룹이 분리됨)
  * Usage:
- *  <InputRadio options={['옵션1', '옵션2']} defaultValue="옵션1" />
+ *  <InputRadio
+ *    label="연령대"
+ *    name="ageGroup"
+ *    required
+ *    options={['10대', '20대', '30대']}
+ *    defaultValue="20대"
+ *  />
  */
 import { useState } from 'react';
 import styles from '~/shared/css/Form.module.css';

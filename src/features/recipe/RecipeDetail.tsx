@@ -19,21 +19,21 @@ export const RecipeDetail = () => {
         <div className="mx-[-16px] lg:mx-0 lg:w-[55.98%]">
           {/* 1) 이미지 비율맞추고 비어보이는영역 배경색 넣은 경우 */}
           {/* <img
-            src="/schoolfood/images/img/recipe01.jpg"
+            src="/images/img/recipe01.jpg"
             alt=""
             className="h-full w-full aspect-[860/506] object-contain bg-gray-100 lg:rounded-[16px]"
           /> */}
 
           {/* 2) 이미지 꽉 채운 경우 */}
           {/* <img
-            src="/schoolfood/images/img/recipe01.jpg"
+            src="/images/img/recipe01.jpg"
             alt=""
             className="h-full w-full aspect-[860/506] object-cover lg:rounded-[16px]"
           /> */}
 
           {/* 3) 이미지 비율맞추고 상단 고정 */}
           <img
-            src="/schoolfood/images/img/recipe01.jpg"
+            src="/images/img/recipe01.jpg"
             alt=""
             className="w-full aspect-[860/506] object-contain lg:rounded-[16px]"
           />
@@ -52,7 +52,7 @@ export const RecipeDetail = () => {
 
       <div className="mt-[60px] lg:mt-[120px]">
         <p className="text-lg lg:text-2xl mb-[12px] lg:mb-[24px] font-medium">상세 설명</p>
-        <img src="/schoolfood/images/img/recipe01.jpg" alt="" className="w-full" />
+        <img src="/images/img/recipe01.jpg" alt="" className="w-full" />
       </div>
 
       <Mobile>

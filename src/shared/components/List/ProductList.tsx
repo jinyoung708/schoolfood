@@ -157,7 +157,7 @@ export const ProductList = ({
         />
         <Link to="/category/detail" className="block">
           <RatioImage
-            src="/schoolfood/images/img/product01.jpg"
+            src="/images/img/product01.jpg"
             alt="백설 바질 토마토 파스타소스"
             ratio={small ? '1/1' : '4/5'}
             isContain
@@ -198,7 +198,7 @@ export const ProductList = ({
         />
         <Link to="/category/detail" className="block">
           <RatioImage
-            src="/schoolfood/images/img/product01.jpg"
+            src="/images/img/product01.jpg"
             alt="백설 바질 토마토 파스타소스"
             ratio={small ? '1/1' : '4/5'}
             isContain
