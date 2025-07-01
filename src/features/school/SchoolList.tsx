@@ -35,7 +35,7 @@ export const SchoolList = () => {
               onClick={() => {}}
             />
           }
-          rightChildren={<WriteBtn />}
+          rightChildren={<WriteBtn to="/school/write" />}
         />
       </div>
       <div className="flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[18px]">

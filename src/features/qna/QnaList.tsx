@@ -40,7 +40,7 @@ export const QnaList = () => {
               <div className="hidden lg:block">
                 <ToggleOption sortOptions={['10개씩', 'n개씩']} />
               </div>
-              <WriteBtn />
+              <WriteBtn to="/qna/write" />
             </div>
           }
         />

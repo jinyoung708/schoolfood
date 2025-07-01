@@ -14,8 +14,9 @@
     "postinstall": "husky install",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "predeploy": "npm run build-dev",
+    "predeploy": "npm run build-dev && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
