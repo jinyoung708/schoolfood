@@ -102,7 +102,7 @@ export const AddProduct = ({ left, top, isOpen, onToggle, onClose }: AddProductP
                               <span />
                             </div>
                             <RatioImage
-                              src="/schoolfood/schoolfood/images/img/product01.jpg"
+                              src="/schoolfood/images/img/product01.jpg"
                               ratio="1/1"
                               className="w-[80px] shrink-0 rounded-[8px]"
                             />

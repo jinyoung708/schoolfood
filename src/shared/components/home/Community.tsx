@@ -72,7 +72,7 @@ export const Community = () => {
           <TabPanel>
             <ul className="post-list">
               <li>
-                <Link to="/">
+                <Link to="/school/detail">
                   <div className="post-content">
                     <div className="post-text">
                       <p className="post-title">우리반 인기메뉴는 이거!</p>
@@ -83,7 +83,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/schoolfood/schoolfood/images/img/community01.jpg"
+                        src="/schoolfood/images/img/community01.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -102,7 +102,7 @@ export const Community = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/">
+                <Link to="/school/detail">
                   <div className="post-content">
                     <div className="post-text">
                       <p className="post-title">아이들이 먼저 물어봤어요</p>
@@ -113,7 +113,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/schoolfood/schoolfood/images/img/community02.jpg"
+                        src="/schoolfood/images/img/community02.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -132,7 +132,7 @@ export const Community = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/">
+                <Link to="/school/detail">
                   <div className="post-content">
                     <div className="post-text">
                       <p className="post-title">3월 신학기 식단 운영 결과</p>
@@ -143,7 +143,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/schoolfood/schoolfood/images/img/community03.jpg"
+                        src="/schoolfood/images/img/community03.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -166,18 +166,15 @@ export const Community = () => {
           <TabPanel>
             <ul className="post-list">
               <li>
-                <Link to="/">
+                <Link to="/tip/detail">
                   <div className="post-content">
                     <div className="post-text">
-                      <p className="post-title">아이들이 먼저 물어봤어요</p>
-                      <p className="post-desc">
-                        새 학기를 준비하는 영양사 선생님들께 다양한 식단 아이디어로 도움이 새 학기를
-                        준비하는 영양사 선생님들께 다양한 식단 아이디어로 도움이
-                      </p>
+                      <p className="post-category">상품사용 꿀팁</p>
+                      <p className="post-title2">어린이 호떡 상품(2kg) 활용 공유해요</p>
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/schoolfood/schoolfood/images/img/community02.jpg"
+                        src="/schoolfood/images/img/community02.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -200,21 +197,11 @@ export const Community = () => {
           <TabPanel>
             <ul className="post-list">
               <li>
-                <Link to="/">
+                <Link to="/qna/detail">
                   <div className="post-content">
-                    <div className="post-text">
-                      <p className="post-title">3월 신학기 식단 운영 결과</p>
-                      <p className="post-desc">
-                        이번에 아이들도 정말 잘 먹더라고요 :) 그래서 공유합니다!! 다음식단에 이번에
-                        아이들도 정말 잘 먹더라고요 :) 그래서 공유합니다!! 다음식단에
-                      </p>
-                    </div>
-                    <div className="post-thumbnail">
-                      <RatioImage
-                        src="/schoolfood/schoolfood/images/img/community03.jpg"
-                        ratio="1/1"
-                        className="rounded-[12px]"
-                      />
+                    <div className="post-text grow">
+                      <p className="post-category">Q&A</p>
+                      <p className="post-title">배송 방법은 어떻게 되나요?</p>
                     </div>
                   </div>
                   <div className="post-meta">

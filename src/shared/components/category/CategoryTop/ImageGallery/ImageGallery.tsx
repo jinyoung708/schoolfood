@@ -87,10 +87,7 @@ export const ImageGallery = ({ items }: ImageGalleryProps) => {
                           case 'HACCP':
                             return (
                               // badge 이미지는 공백 포함한 40x40px 크기로 작업함
-                              <img
-                                src="/schoolfood/schoolfood/images/icon/badge_haccp.png"
-                                alt="HACCP 인증"
-                              />
+                              <img src="/schoolfood/images/icon/badge_haccp.png" alt="HACCP 인증" />
                             );
                           default:
                             return null;

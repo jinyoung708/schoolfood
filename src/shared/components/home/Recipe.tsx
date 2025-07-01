@@ -51,7 +51,10 @@ export const Recipe = () => {
               쉽고 간단하게 알려줄게요‍
               <Icon src="emoji01.svg" className="w-[20px] lg:w-[33px]" />
             </span>
-            <Link to="/" className={cn('flex items-center ml-auto text-white', styles.btnAll)}>
+            <Link
+              to="/recipe"
+              className={cn('flex items-center ml-auto text-white', styles.btnAll)}
+            >
               전체보기
               <Icon src="arrow_right_white.svg" className="lg:w-auto w-[12px]" />
             </Link>
@@ -74,27 +77,27 @@ export const Recipe = () => {
               )}
             >
               <SwiperSlide>
-                <Link to="/" className={styles.play}>
+                <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/schoolfood/images/img/recipe01.jpg"
+                    src="/schoolfood/images/img/recipe01.jpg"
                     alt="마라 수혈이 필요할 때 마파두부 덮밥"
                     className="w-full h-full object-cover"
                   />
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/" className={styles.play}>
+                <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/schoolfood/images/img/recipe02.jpg"
+                    src="/schoolfood/images/img/recipe02.jpg"
                     alt="부담 없는 두부면 팟타이"
                     className="w-full h-full object-cover"
                   />
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/" className={styles.play}>
+                <Link to="/recipe/detail" className={styles.play}>
                   <img
-                    src="/schoolfood/schoolfood/images/img/recipe03.jpg"
+                    src="/schoolfood/images/img/recipe03.jpg"
                     alt="톡톡 터지는 단짠 새콤함 옥수수 살사"
                     className="w-full h-full object-cover"
                   />
@@ -123,7 +126,7 @@ export const Recipe = () => {
                     짭짤한 맛으로 밥과 잘 어울려 고급 중화 레스토랑 못지 않은 근사한 요리에요.
                   </p>
                   <Link
-                    to="/"
+                    to="/recipe/detail"
                     className={cn(
                       'flex items-center text-sm lg:text-lg text-gray-500 font-medium gap-[2px] lg:gap-[8px] mt-[12px] lg:mt-[16px]',
                     )}
@@ -136,9 +139,9 @@ export const Recipe = () => {
                   <p className="text-base lg:text-xl font-medium mb-[16px]">레시피 연관상품</p>
                   <ul className="flex gap-[12px] lg:gap-[16px]">
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product02.jpg"
+                          src="/schoolfood/images/img/product02.jpg"
                           ratio="1/1"
                           alt="고메 탕수육"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -150,9 +153,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product03.jpg"
+                          src="/schoolfood/images/img/product03.jpg"
                           ratio="1/1"
                           alt="단단한 큰 두부"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -164,9 +167,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product04.jpg"
+                          src="/schoolfood/images/img/product04.jpg"
                           ratio="1/1"
                           alt="프리미엄 굴소스"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -191,7 +194,7 @@ export const Recipe = () => {
                     메뉴에요.
                   </p>
                   <Link
-                    to="/"
+                    to="/recipe/detail"
                     className={cn(
                       'flex items-center text-sm lg:text-lg text-gray-500 font-medium gap-[2px] lg:gap-[8px] mt-[12px] lg:mt-[16px]',
                     )}
@@ -204,9 +207,9 @@ export const Recipe = () => {
                   <p className="text-base lg:text-xl font-medium mb-[16px]">레시피 연관상품</p>
                   <ul className="flex gap-[12px] lg:gap-[16px]">
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product01.jpg"
+                          src="/schoolfood/images/img/product01.jpg"
                           ratio="1/1"
                           alt="고단백 두부면"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -218,9 +221,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product02.jpg"
+                          src="/schoolfood/images/img/product02.jpg"
                           ratio="1/1"
                           alt="1+등급 건강란"
                           className="rounded-[8px] lg:rounded-[16px]"
@@ -232,9 +235,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product05.jpg"
+                          src="/schoolfood/images/img/product05.jpg"
                           ratio="1/1"
                           alt="바질 토마토 소스"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -260,7 +263,7 @@ export const Recipe = () => {
                     색다르게 즐길 수 있어요.
                   </p>
                   <Link
-                    to="/"
+                    to="/recipe/detail"
                     className={cn(
                       'flex items-center text-sm lg:text-lg text-gray-500 font-medium gap-[2px] lg:gap-[8px] mt-[12px] lg:mt-[16px]',
                     )}
@@ -273,9 +276,9 @@ export const Recipe = () => {
                   <p className="text-base lg:text-xl font-medium mb-[16px]">레시피 연관상품</p>
                   <ul className="flex gap-[12px] lg:gap-[16px]">
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product03.jpg"
+                          src="/schoolfood/images/img/product03.jpg"
                           ratio="1/1"
                           alt="이츠웰 스위트콘"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -287,9 +290,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product04.jpg"
+                          src="/schoolfood/images/img/product04.jpg"
                           ratio="1/1"
                           alt="백설 허브맛솔트"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"
@@ -301,9 +304,9 @@ export const Recipe = () => {
                       </Link>
                     </li>
                     <li className="w-[calc((100%-24px)/3)] lg:w-[calc((100%-32px)/3)]">
-                      <Link to="/">
+                      <Link to="/category/detail">
                         <RatioImage
-                          src="/schoolfood/schoolfood/images/img/product05.jpg"
+                          src="/schoolfood/images/img/product05.jpg"
                           ratio="1/1"
                           alt="백설 쌀올리고당"
                           className="rounded-[8px] lg:rounded-[16px] bg-gray-150"

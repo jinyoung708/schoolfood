@@ -11,6 +11,7 @@ import { ProductList } from '~/shared/components/List/ProductList';
 import styles from '~/shared/css/Home.module.css';
 import { Icon } from '../Icon';
 import { cn } from '~/shared/utils';
+import { Mobile, PC } from '../Responsive';
 
 export const Product = () => {
   return (
@@ -19,7 +20,7 @@ export const Product = () => {
         <p className={styles.title1}>이달의 메인상품</p>
         <p className={cn('flex items-center', styles.title2)}>
           <span>따끈따끈 방금 새로 나왔어요</span>
-          <Link to="/" className={cn('flex items-center ml-auto', styles.btnAll)}>
+          <Link to="/product" className={cn('flex items-center ml-auto', styles.btnAll)}>
             전체보기
             <Icon src="arrow_right.svg" className="lg:w-auto w-[12px]" />
           </Link>
@@ -45,22 +46,22 @@ export const Product = () => {
         }}
       >
         <SwiperSlide className="w-[162px] lg:w-[288px]">
-          <ProductList />
+          <ProductList login />
         </SwiperSlide>
         <SwiperSlide className="w-[162px] lg:w-[288px]">
           <ProductList login />
         </SwiperSlide>
         <SwiperSlide className="w-[162px] lg:w-[288px]">
-          <ProductList login noUnitPrice />
+          <ProductList login />
         </SwiperSlide>
         <SwiperSlide className="w-[162px] lg:w-[288px]">
-          <ProductList login ingPrice />
+          <ProductList login />
         </SwiperSlide>
         <SwiperSlide className="w-[162px] lg:w-[288px]">
-          <ProductList login noPrice />
+          <ProductList login />
         </SwiperSlide>
         <SwiperSlide className="w-[162px] lg:w-[288px]">
-          <ProductList login stop />
+          <ProductList login />
         </SwiperSlide>
       </Swiper>
     </section>

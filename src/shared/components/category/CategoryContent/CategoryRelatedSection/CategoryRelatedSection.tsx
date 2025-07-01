@@ -38,7 +38,7 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
           <SwiperSlide>
             <ThumbItem
               thumb={{
-                src: '/schoolfood/schoolfood/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
                 ratio: '16/9',
               }}
@@ -53,7 +53,7 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
           <SwiperSlide>
             <ThumbItem
               thumb={{
-                src: '/schoolfood/schoolfood/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
                 ratio: '16/9',
               }}
@@ -68,7 +68,7 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
           <SwiperSlide>
             <ThumbItem
               thumb={{
-                src: '/schoolfood/schoolfood/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
                 ratio: '16/9',
               }}

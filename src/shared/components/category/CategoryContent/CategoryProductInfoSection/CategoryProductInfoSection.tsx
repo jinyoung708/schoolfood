@@ -5,11 +5,7 @@ export const CategoryProductInfoSection = () => {
   return (
     <div className="flex flex-col gap-[40px] lg:gap-[60px]">
       <div className="flex flex-col justify-center items-center">
-        <img
-          src="/schoolfood/schoolfood/images/img/detail01.jpg"
-          alt="상품 이미지"
-          className="block w-full"
-        />
+        <img src="/schoolfood/images/img/detail01.jpg" alt="상품 이미지" className="block w-full" />
       </div>
       <div className="flex flex-col gap-[2px] lg:gap-[4px] text-center">
         <p className="text-2xl lg:text-34 font-medium">백설 바질 토마토 파스타소스</p>

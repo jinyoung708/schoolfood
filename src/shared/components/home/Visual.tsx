@@ -53,12 +53,12 @@ export const Visual = () => {
           <SwiperSlide>
             <Link to="/">
               <img
-                src="/schoolfood/schoolfood/images/img/visual01_pc.jpg"
+                src="/schoolfood/images/img/visual01_pc.jpg"
                 alt="가장 트렌디한 급식 솔루션 튼튼스쿨 (PC)"
                 className="hidden md:block w-full"
               />
               <img
-                src="/schoolfood/schoolfood/images/img/visual01_mo.jpg"
+                src="/schoolfood/images/img/visual01_mo.jpg"
                 alt="가장 트렌디한 급식 솔루션 튼튼스쿨 (모바일)"
                 className="block md:hidden w-full"
               />
@@ -67,12 +67,12 @@ export const Visual = () => {
           <SwiperSlide>
             <Link to="/">
               <img
-                src="/schoolfood/schoolfood/images/img/visual02_pc.jpg"
+                src="/schoolfood/images/img/visual02_pc.jpg"
                 alt="4월 봄 제철 간편식 반찬 메뉴 (PC)"
                 className="hidden md:block w-full"
               />
               <img
-                src="/schoolfood/schoolfood/images/img/visual02_mo.jpg"
+                src="/schoolfood/images/img/visual02_mo.jpg"
                 alt="4월 봄 제철 간편식 반찬 메뉴 (모바일)"
                 className="block md:hidden w-full"
               />
@@ -81,12 +81,12 @@ export const Visual = () => {
           <SwiperSlide>
             <Link to="/">
               <img
-                src="/schoolfood/schoolfood/images/img/visual03_pc.jpg"
+                src="/schoolfood/images/img/visual03_pc.jpg"
                 alt="즐겁고 행복한 5월 맛있는 메뉴 (PC)"
                 className="hidden md:block w-full"
               />
               <img
-                src="/schoolfood/schoolfood/images/img/visual03_mo.jpg"
+                src="/schoolfood/images/img/visual03_mo.jpg"
                 alt="즐겁고 행복한 5월 맛있는 메뉴 (모바일)"
                 className="block md:hidden w-full"
               />
