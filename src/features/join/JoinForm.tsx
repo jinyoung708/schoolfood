@@ -77,6 +77,7 @@ export const JoinForm = () => {
             </div>
             <div>
               <InputRadio
+                name="ageGroup"
                 label="연령대"
                 required
                 options={['20대 이하', '30대', '40대', '50대', '60대 이상']}
@@ -96,6 +97,7 @@ export const JoinForm = () => {
             </div>
             <div>
               <InputRadio
+                name="joinPath"
                 label="가입경로"
                 required
                 options={['담당 영업사원', 'sns', '검색', '기타']}

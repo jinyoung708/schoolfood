@@ -17,6 +17,7 @@ interface InputRadioProps {
   options: string[];
   defaultValue?: string;
   className?: string;
+  name?: string;
 }
 
 export const InputRadio = ({
@@ -25,6 +26,7 @@ export const InputRadio = ({
   options,
   defaultValue,
   className,
+  name,
 }: InputRadioProps) => {
   const [selected, setSelected] = useState(defaultValue ?? options[0]);
 
@@ -33,7 +35,7 @@ export const InputRadio = ({
       {label && <p className={cn(required ? styles.required : '', styles.label)}>{label}</p>}
       <div role="radiogroup" className="flex gap-x-[40px] gap-y-[16px] flex-wrap">
         {options.map((option, index) => {
-          const id = `input-radio-${index}`;
+          const id = `${name}-${index}`;
           return (
             <label
               key={option}

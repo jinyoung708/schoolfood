@@ -53,9 +53,6 @@ export const EditProfile = () => {
 
       {/* 2) 개인정보 수정 */}
       <div className="mt-[30px] lg:mt-[80px] w-full max-w-[756px] mx-auto">
-        <p className="text-gray-500 text-xs text-right mb-[-8px] lg:mb-[6px]">
-          <span className="text-point-red">*</span> 필수입력사항
-        </p>
         <WriteList className={cn(styles.joinWrap, 'gap-0')}>
           <div className={cn(styles.form)}>
             <div>
@@ -110,6 +107,7 @@ export const EditProfile = () => {
             </div>
             <div>
               <InputRadio
+                name="ageGroup"
                 label="연령대"
                 required
                 options={['20대 이하', '30대', '40대', '50대', '60대 이상']}
@@ -129,6 +127,7 @@ export const EditProfile = () => {
             </div>
             <div>
               <InputRadio
+                name="joinPath"
                 label="가입경로"
                 required
                 options={['담당 영업사원', 'sns', '검색', '기타']}
