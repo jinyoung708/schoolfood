@@ -180,6 +180,14 @@ body {
     @apply truncate font-medium;
     @apply text-base lg:text-2xl;
   }
+  .post-list > li .post-content .post-title2 {
+    @apply line-clamp-2 font-medium;
+    @apply text-base lg:text-2xl;
+  }
+  .post-list > li .post-content .post-category {
+    @apply truncate text-primary;
+    @apply text-sm lg:text-xl;
+  }
   .post-list > li .post-content .post-desc {
     @apply line-clamp-2 text-gray-500;
     @apply text-sm lg:text-xl;
