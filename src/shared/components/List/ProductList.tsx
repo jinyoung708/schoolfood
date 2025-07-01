@@ -140,20 +140,13 @@ export const ProductList = ({
   const priceSection = renderPriceSection();
 
   return stop ? (
-    <Link to="/category/detail" className={cn(small ? styles.small : '')}>
+    <div className={cn(small ? styles.small : '')}>
       <div
         className={cn(
           'relative rounded-[8px] lg:rounded-[16px] overflow-hidden',
           small ? `mb-[12px] border-2 ${styles.thumb}` : 'mb-[12px] lg:mb-[24px]',
         )}
       >
-        <RatioImage
-          src="/images/img/product01.jpg"
-          alt="백설 바질 토마토 파스타소스"
-          ratio={small ? '1/1' : '4/5'}
-          isContain
-          className="bg-gray-100"
-        />
         <Bookmark
           className={cn(
             'absolute',
@@ -162,37 +155,39 @@ export const ProductList = ({
               : 'w-[24px] lg:w-[32px] top-[12px] lg:top-[24px] right-[8px] lg:right-[20px]',
           )}
         />
-        <span
-          className={cn(
-            'flex items-center justify-center absolute left-0 top-0 w-full h-full',
-            styles.stopItem,
-          )}
-        >
-          중단상품
-        </span>
+        <Link to="/category/detail" className="block">
+          <RatioImage
+            src="/schoolfood/schoolfood/images/img/product01.jpg"
+            alt="백설 바질 토마토 파스타소스"
+            ratio={small ? '1/1' : '4/5'}
+            isContain
+            className="bg-gray-150"
+          />
+          <span
+            className={cn(
+              'flex items-center justify-center absolute left-0 top-0 w-full h-full',
+              styles.stopItem,
+            )}
+          >
+            중단상품
+          </span>
+        </Link>
       </div>
-      <div className="px-[4px] lg:px-[8px]">
+      <Link to="/category/detail" className="block px-[4px] lg:px-[8px]">
         <p className="text-sm lg:text-22 font-medium lg:mb-[2px] truncate">
           백설 바질 토마토 파스타소스
         </p>
         <p className="text-xs lg:text-lg text-gray-500">1병 365g</p>
-      </div>
-    </Link>
+      </Link>
+    </div>
   ) : (
-    <Link to="/category/detail" className={cn(small ? styles.small : '')}>
+    <div className={cn(small ? styles.small : '')}>
       <div
         className={cn(
           'relative rounded-[8px] lg:rounded-[16px] overflow-hidden',
           small ? `mb-[12px] thumbnail` : 'mb-[12px] lg:mb-[24px]',
         )}
       >
-        <RatioImage
-          src="/images/img/product01.jpg"
-          alt="백설 바질 토마토 파스타소스"
-          ratio={small ? '1/1' : '4/5'}
-          isContain
-          className="bg-gray-100"
-        />
         <Bookmark
           className={cn(
             'absolute',
@@ -201,8 +196,20 @@ export const ProductList = ({
               : 'w-[24px] lg:w-[32px] top-[12px] lg:top-[24px] right-[8px] lg:right-[20px]',
           )}
         />
+        <Link to="/category/detail" className="block">
+          <RatioImage
+            src="/schoolfood/schoolfood/images/img/product01.jpg"
+            alt="백설 바질 토마토 파스타소스"
+            ratio={small ? '1/1' : '4/5'}
+            isContain
+            className="bg-gray-150"
+          />
+        </Link>
       </div>
-      <div className={cn(small ? 'px-[4px]' : 'px-[4px] lg:px-[8px]')}>
+      <Link
+        to="/category/detail"
+        className={cn('block', small ? 'px-[4px]' : 'px-[4px] lg:px-[8px]')}
+      >
         <p
           className={cn(
             'font-medium truncate',
@@ -215,7 +222,7 @@ export const ProductList = ({
           1병 365g
         </p>
         {priceSection}
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };

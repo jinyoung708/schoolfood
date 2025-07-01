@@ -34,6 +34,9 @@ export const JoinForm = () => {
                 placeholder="아이디를 입력해주세요."
                 required
                 btnName="중복확인"
+                desc="5~12자 영문 소문자, 숫자 가능"
+                errorMessage="사용 불가능한 아이디입니다."
+                successMessage="사용 가능한 아이디입니다."
               />
             </div>
             <div>

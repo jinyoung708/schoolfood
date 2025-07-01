@@ -1,3 +1,5 @@
+import { cn } from '~/shared/utils';
+
 interface ListTopContainerProps {
   leftChildren?: React.ReactNode;
   rightChildren?: React.ReactNode;
@@ -10,7 +12,12 @@ export const ListTopContainer = ({
   rightChildren,
 }: ListTopContainerProps) => {
   return (
-    <div className="flex items-end justify-between pt-[70px] lg:pt-[0] relative">
+    <div
+      className={cn(
+        'flex items-end justify-between lg:pt-[0] relative',
+        searchChildren && 'pt-[70px]',
+      )}
+    >
       {leftChildren && <div className="shrink-0">{leftChildren}</div>}
       <div className="flex items-center lg:gap-[16px] shrink-0">
         {searchChildren && (

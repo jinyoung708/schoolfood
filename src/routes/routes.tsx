@@ -7,7 +7,10 @@ import { MainLayout, SubLayout, CategoryLayout } from '~/features/layouts';
 // Error Pages
 import { Error404Page, Maintenance, NetworkErrorPage } from '~/pages/error';
 
-// Legal Pages
+// Public Pages
+import { LoginPage } from '~/pages/login';
+import { JoinPage } from '~/pages/join';
+import { ModalPopupPage } from '~/pages/modal';
 import {
   EmailRejectionPolicyPage,
   LegalNoticePage,
@@ -15,32 +18,38 @@ import {
   TermsOfServicePage,
 } from '~/pages/legal';
 
-// Public Pages
-import { LoginPage } from '~/pages/login';
-import { JoinPage } from '~/pages/join';
-import { ModalPopupPage } from '~/pages/modal';
-
-// Main Pages
+// 메인
 import { HomePage } from '~/pages/home';
 
-// Category
+// 카테고리
 import { CategoryListPage, CategoryDetailPage } from '~/pages/category';
 
-// Recipe
+// 신상품
+import { ProductNewPage, ProductPage } from '~/pages/product';
+
+// 레시피
 import { RecipeDetailPage, RecipePage, RecipeVideoListPage } from '~/pages/recipe';
 
-// Community
+// 월간행사
+import { MonthlyEventPage } from '~/pages/monthly';
+
+// 커뮤니티
 import { QnaListPage, QnaDetailPage, QnaWritePage } from '~/pages/qna';
 import { NoticeDetailPage, NoticeListPage } from '~/pages/notice';
 import { TipDetailPage, TipListPage, TipWritePage } from '~/pages/tip';
 import { ArchiveDetailPage, ArchiveListPage } from '~/pages/archive';
 import { SchoolDetailPage, SchoolPage, SchoolWritePage } from '~/pages/school';
 
-// Event
+// 이벤트
 import { EventDetailPage, EventListPage, EndedEventListPage } from '~/pages/event';
 
-// Others
+// 통합검색
 import { SearchPage } from '~/pages/search';
+
+// 마이페이지
+import { EditProfilePage, FavoritesPage, MyPostsPage } from '~/pages/mypage';
+
+// Others
 import { PublishPage } from '~/pages/publish';
 
 type CustomChildRouteObject = RouteObject & {
@@ -81,10 +90,17 @@ export const routes: CustomRouteObject[] = [
       // 카테고리
       { path: '/category/detail', title: '상품상세', element: <CategoryDetailPage /> },
 
+      // 신상품
+      { path: '/product', title: '메인상품', element: <ProductPage /> },
+      { path: '/product/new', title: '신상품', element: <ProductNewPage /> },
+
       // 레시피
       { path: '/recipe', title: '추천 레시피', element: <RecipePage /> },
       { path: '/recipe/detail', title: '레시피 상세', element: <RecipeDetailPage /> },
       { path: '/recipe/video', title: '동영상 레시피', element: <RecipeVideoListPage /> },
+
+      // 월별 행사지
+      { path: '/monthly', element: <MonthlyEventPage /> },
 
       // 자료실
       { path: '/archive', title: '자료실', element: <ArchiveListPage /> },
@@ -126,6 +142,11 @@ export const routes: CustomRouteObject[] = [
         title: '이메일 무단수집 거부',
         element: <EmailRejectionPolicyPage />,
       },
+
+      // 마이페이지
+      { path: '/mypage', title: '마이페이지', element: <FavoritesPage /> },
+      { path: '/mypage/post', title: '마이페이지', element: <MyPostsPage /> },
+      { path: '/mypage/edit', title: '마이페이지', element: <EditProfilePage /> },
     ],
   },
 

@@ -1,3 +1,4 @@
+import '~/shared/css/global.css';
 import { useEffect, useState } from 'react';
 import { QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';

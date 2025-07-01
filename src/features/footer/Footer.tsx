@@ -96,12 +96,12 @@ export const Footer = () => {
           </div>
           <div className={styles.rightBox}>
             <div className={styles.linkList}>
-              <Link to="/" className="font-semibold">
+              <Link to="/legal/privacy" className="font-semibold">
                 개인정보처리방침
               </Link>
-              <Link to="/">이용약관</Link>
-              <Link to="/">법적고지</Link>
-              <Link to="/">이메일 무단수집 거부</Link>
+              <Link to="/legal/terms">이용약관</Link>
+              <Link to="/legal/notice">법적고지</Link>
+              <Link to="/legal/email">이메일 무단수집 거부</Link>
               <Link to="/">온라인제보</Link>
             </div>
             <p className={styles.textList}>

@@ -63,7 +63,7 @@ export const PostTop = ({
         </span>
       )}
       <div className="flex flex-col items-center gap-[4px] lg:gap-[8px]">
-        <p className="text-22 lg:text-34 font-medium">{title}</p>
+        <p className="text-22 lg:text-34 font-medium text-center">{title}</p>
         <div className="flex items-center justify-center gap-[12px]">
           {/* left area */}
           <div className="flex items-center justify-center gap-[12px]">

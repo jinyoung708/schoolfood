@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { cn } from '~/shared/utils';
 import styles from '~/shared/css/YoutubePlayer.module.css';
 import { Icon } from './Icon';
+import { PC } from './Responsive';
 
 interface YoutubePlayerProps {
   videoId: string;
@@ -41,7 +42,7 @@ export const YoutubePlayer = ({
     <>
       <Button
         className={cn(
-          'relative w-full h-full cursor-pointer overflow-hidden bg-cover bg-center bg-no-repeat',
+          'relative w-full h-full cursor-pointer overflow-hidden bg-cover bg-center bg-no-repeat bg-gray-150',
           aspectClass,
           className,
         )}
@@ -74,13 +75,15 @@ export const YoutubePlayer = ({
             </div>
           )
         ) : (
-          <iframe
-            className="w-full h-full"
-            src={embedUrl}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="YouTube Preview"
-          />
+          <PC>
+            <iframe
+              className="w-full h-full"
+              src={embedUrl}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="YouTube Preview"
+            />
+          </PC>
         )}
         <div className="absolute inset-0 transition" />
       </Button>

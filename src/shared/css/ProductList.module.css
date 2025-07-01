@@ -142,6 +142,7 @@
 
   .tagBox {
     margin-top: 8px;
+    gap: 4px;
   }
   .tagBox span {
     @apply text-10;

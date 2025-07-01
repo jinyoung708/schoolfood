@@ -157,73 +157,73 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                 <ul className={cn(styles.menuDepth2, styles.category)}>
                   <ToggleList title="육가공" icon="category1">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="계육·수산가공" icon="category2">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="핫도그·만두·냉동기타" icon="category3">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="계란·치즈·두부·묵" icon="category4">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="음료류" icon="category5">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="후식류" icon="category6">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="소스·드레싱" icon="category7">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="가공기타·비식품" icon="category8">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="채식" icon="category9">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="분가공·분류" icon="category10">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="농산·수산·축산물" icon="category11">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="자연드림" icon="category12">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                   <ToggleList title="중단상품" icon="category13">
                     <li>
-                      <Link to="/">3DEPTH</Link>
+                      <Link to="/category/list">3DEPTH</Link>
                     </li>
                   </ToggleList>
                 </ul>
@@ -231,56 +231,56 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
               {isActive(2) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/">메인상품</Link>
+                    <Link to="/product">메인상품</Link>
                   </li>
                   <li>
-                    <Link to="/">신상품</Link>
+                    <Link to="/product/new">신상품</Link>
                   </li>
                 </ul>
               )}
               {isActive(3) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/">추천 레시피</Link>
+                    <Link to="/recipe">추천 레시피</Link>
                   </li>
                   <li>
-                    <Link to="/">동영상 레시피</Link>
+                    <Link to="/recipe/video">동영상 레시피</Link>
                   </li>
                 </ul>
               )}
               {isActive(4) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/">월별 행사지</Link>
+                    <Link to="/monthly">월별 행사지</Link>
                   </li>
                 </ul>
               )}
               {isActive(5) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/">자료실</Link>
+                    <Link to="/archive">자료실</Link>
                   </li>
                   <li>
-                    <Link to="/">상품사용 꿀팁</Link>
+                    <Link to="/tip">상품사용 꿀팁</Link>
                   </li>
                   <li>
-                    <Link to="/">Q&A</Link>
+                    <Link to="/qna">Q&A</Link>
                   </li>
                   <li>
-                    <Link to="/">우리학교 급식자랑</Link>
+                    <Link to="/school">우리학교 급식자랑</Link>
                   </li>
                   <li>
-                    <Link to="/">공지사항</Link>
+                    <Link to="/notice">공지사항</Link>
                   </li>
                 </ul>
               )}
               {isActive(6) && (
                 <ul className={cn(styles.menuDepth2)}>
                   <li>
-                    <Link to="/">진행중 이벤트</Link>
+                    <Link to="/event">진행중 이벤트</Link>
                   </li>
                   <li>
-                    <Link to="/">지난 이벤트</Link>
+                    <Link to="/endedEvent">지난 이벤트</Link>
                   </li>
                 </ul>
               )}

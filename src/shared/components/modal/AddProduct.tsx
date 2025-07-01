@@ -102,23 +102,25 @@ export const AddProduct = ({ left, top, isOpen, onToggle, onClose }: AddProductP
                               <span />
                             </div>
                             <RatioImage
-                              src="/images/img/product01.jpg"
+                              src="/schoolfood/schoolfood/images/img/product01.jpg"
                               ratio="1/1"
-                              className="w-[100px] shrink-0 rounded-[8px]"
+                              className="w-[80px] shrink-0 rounded-[8px]"
                             />
                             <div className="grow min-w-0">
                               <p className="flex gap-[8px] items-center">
-                                <span className="truncate text-22 font-medium">고메 탕수육</span>
-                                <small className="text-lg font-normal text-gray-500 shrink-0">
+                                <span className="truncate text-sm lg:text-22 font-medium">
+                                  고메 탕수육
+                                </span>
+                                <small className="text-xs lg:text-lg font-normal text-gray-500 shrink-0">
                                   1팩 152g
                                 </small>
                               </p>
-                              <div className="mt-[8px]">
-                                <p className="flex items-center gap-[8px] text-base">
+                              <div className="mt-[4px] lg:mt-[8px]">
+                                <p className="flex items-center gap-[8px] text-xs lg:text-base">
                                   <span className="text-gray-500">규격단가</span>
                                   <s className="text-gray-400">10,290원</s>
                                 </p>
-                                <p className="flex items-center gap-[8px] mt-[2px] text-xl font-semibold">
+                                <p className="flex items-center gap-[8px] lg:mt-[2px] text-xl font-semibold">
                                   <span className="text-secondary">15%</span>
                                   <strong className="font-semibold">8,790원</strong>
                                 </p>

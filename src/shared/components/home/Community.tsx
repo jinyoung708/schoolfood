@@ -83,7 +83,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/images/img/community01.jpg"
+                        src="/schoolfood/schoolfood/images/img/community01.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -113,7 +113,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/images/img/community02.jpg"
+                        src="/schoolfood/schoolfood/images/img/community02.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -143,7 +143,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/images/img/community03.jpg"
+                        src="/schoolfood/schoolfood/images/img/community03.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -177,7 +177,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/images/img/community02.jpg"
+                        src="/schoolfood/schoolfood/images/img/community02.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />
@@ -211,7 +211,7 @@ export const Community = () => {
                     </div>
                     <div className="post-thumbnail">
                       <RatioImage
-                        src="/images/img/community03.jpg"
+                        src="/schoolfood/schoolfood/images/img/community03.jpg"
                         ratio="1/1"
                         className="rounded-[12px]"
                       />

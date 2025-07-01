@@ -19,38 +19,42 @@ export const FooterLogo = () => {
         >
           <Link to="#">
             <img
-              src="/images/img/logo_mfds.png"
+              src="/schoolfood/schoolfood/images/img/logo_mfds.png"
               alt="식품의약품안전처"
               className="object-contain"
             />
           </Link>
           <Link to="#">
-            <img src="/images/img/logo_mohw.png" alt="보건복지부" className="object-contain" />
+            <img
+              src="/schoolfood/schoolfood/images/img/logo_mohw.png"
+              alt="보건복지부"
+              className="object-contain"
+            />
           </Link>
           <Link to="#">
             <img
-              src="/images/img/logo_neis.png"
+              src="/schoolfood/schoolfood/images/img/logo_neis.png"
               alt="나이스 대국민서비스"
               className="object-contain"
             />
           </Link>
           <Link to="#">
             <img
-              src="/images/img/logo_foodsafetykorea.png"
+              src="/schoolfood/schoolfood/images/img/logo_foodsafetykorea.png"
               alt="식품안전나라"
               className="object-contain"
             />
           </Link>
           <Link to="#">
             <img
-              src="/images/img/logo_dietary4u.png"
+              src="/schoolfood/schoolfood/images/img/logo_dietary4u.png"
               alt="어린이급식관리지원센터"
               className="object-contain"
             />
           </Link>
           <Link to="#">
             <img
-              src="/images/img/logo_childcare.png"
+              src="/schoolfood/schoolfood/images/img/logo_childcare.png"
               alt="육아종합지원센터"
               className="object-contain"
             />

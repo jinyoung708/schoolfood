@@ -257,7 +257,7 @@ export const PublishPage = () => {
             <tr>
               <td className="tit" colSpan={9}>
                 신상품
-                <span />
+                <span>product</span>
               </td>
             </tr>
             <tr>
@@ -267,10 +267,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">Product</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features//
+                <Link to="/product" target="_blank">
+                  /features/product/Product
                 </Link>
               </td>
               <td />
@@ -282,10 +282,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">ProductNew</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features//
+                <Link to="/product/new" target="_blank">
+                  /features/product/ProductNew
                 </Link>
               </td>
               <td />
@@ -346,7 +346,7 @@ export const PublishPage = () => {
             <tr>
               <td className="tit" colSpan={9}>
                 월별 행사지
-                <span />
+                <span>monthly</span>
               </td>
             </tr>
             <tr>
@@ -356,10 +356,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">MonthlyEvent</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features//
+                <Link to="/monthly" target="_blank">
+                  /features/monthly/MonthlyEvent
                 </Link>
               </td>
               <td />
@@ -671,10 +671,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">Favorites</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features/mypage/
+                <Link to="/mypage" target="_blank">
+                  /features/mypage/Favorites
                 </Link>
               </td>
               <td />
@@ -685,10 +685,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">MyPosts</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features/mypage/
+                <Link to="/mypage/post" target="_blank">
+                  /features/mypage/MyPosts
                 </Link>
               </td>
               <td />
@@ -699,10 +699,10 @@ export const PublishPage = () => {
               <td />
               <td />
               <td />
-              <td className="t_file" />
+              <td className="t_file">EditProfile</td>
               <td className="link">
-                <Link to="/" target="_blank">
-                  /features/mypage/
+                <Link to="/mypage/edit" target="_blank">
+                  /features/mypage/EditProfile
                 </Link>
               </td>
               <td />

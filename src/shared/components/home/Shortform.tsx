@@ -53,19 +53,19 @@ export const Shortform = () => {
             },
           }}
         >
-          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden">
+          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
             <YoutubePlayer videoId="ikEpYxy4nCE" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden">
+          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
             <YoutubePlayer videoId="y_UdSvenxFI" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden">
+          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
             <YoutubePlayer videoId="3vSnFPb3flc" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden">
+          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
             <YoutubePlayer videoId="wEhhFHOtMCU" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden">
+          <SwiperSlide className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
             <YoutubePlayer videoId="70hL81Gx7G4" />
           </SwiperSlide>
         </Swiper>

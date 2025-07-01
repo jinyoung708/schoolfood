@@ -17,38 +17,46 @@ export const Sponsor = () => {
         )}
       >
         <Link to="">
-          <img src="/images/img/logo_freshway.png" alt="CJ FRESHWAY" className="object-contain" />
+          <img
+            src="/schoolfood/schoolfood/images/img/logo_freshway.png"
+            alt="CJ FRESHWAY"
+            className="object-contain"
+          />
         </Link>
         <Link to="">
           <img
-            src="/images/img/logo_instagram_freshway.png"
+            src="/schoolfood/schoolfood/images/img/logo_instagram_freshway.png"
             alt="cjfreshway_official"
             className="object-contain"
           />
         </Link>
         <Link to="">
           <img
-            src="/images/img/logo_instagram_school.png"
+            src="/schoolfood/schoolfood/images/img/logo_instagram_school.png"
             alt="cjfreshway_school"
             className="object-contain"
           />
         </Link>
         <Link to="">
           <img
-            src="/images/img/logo_freshmarket.png"
+            src="/schoolfood/schoolfood/images/img/logo_freshmarket.png"
             alt="FRESH MARKET"
             className="object-contain"
           />
         </Link>
         <Link to="">
           <img
-            src="/images/img/logo_solution.png"
+            src="/schoolfood/schoolfood/images/img/logo_solution.png"
             alt="CJ FRESHWAY Soultion LAB"
             className="object-cover"
           />
         </Link>
         <Link to="">
-          <img src="/images/img/logo_youtube.png" alt="YouTube" className="object-contain" />
+          <img
+            src="/schoolfood/schoolfood/images/img/logo_youtube.png"
+            alt="YouTube"
+            className="object-contain"
+          />
         </Link>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { ListSearchInput } from '~/shared/components/List/ListSearchInput';
 import { ListTopContainer } from '~/shared/components/List/ListTopContainer';
 import { ComSwitch } from '~/shared/ui/ComSwitch';
 import { ProductList } from '~/shared/components/List/ProductList';
+import { ComPagination } from '~/shared/ui/ComPagination';
 
 export const CategoryList = () => {
   const [enabled, setEnabled] = useState(false);
@@ -41,8 +42,8 @@ export const CategoryList = () => {
           }
         />
       </div>
-      <div className="mt-[20px] lg:mt-[24px]">
-        <ul className="grid flex-wrap gap-x-[13px] lg:gap-x-[24px] gap-y-[30px] lg:gap-y-[60px] grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[24px]">
+        <ul className="grid gap-x-[13px] lg:gap-x-[24px] gap-y-[30px] lg:gap-y-[60px] grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           <li>
             <ProductList login />
           </li>
@@ -59,6 +60,7 @@ export const CategoryList = () => {
             <ProductList login />
           </li>
         </ul>
+        <ComPagination />
       </div>
     </div>
   );

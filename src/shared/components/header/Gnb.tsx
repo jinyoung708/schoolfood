@@ -61,15 +61,15 @@ export const Gnb = () => {
     >
       <ul className={cn('flex', styles.gnbDepth1)}>
         <li>
-          <Link to="/category/list">신상품</Link>
+          <Link to="/product">신상품</Link>
           <ul className={cn(styles.gnbDepth2)} role="menu">
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/product" className="rounded-full">
                 메인상품
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/product/new" className="rounded-full">
                 신상품
               </Link>
             </li>
@@ -79,22 +79,22 @@ export const Gnb = () => {
           <Link to="/recipe">레시피</Link>
           <ul className={cn(styles.gnbDepth2)}>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/recipe" className="rounded-full">
                 추천 레시피
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/recipe/video" className="rounded-full">
                 동영상 레시피
               </Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link to="/">월간행사</Link>
+          <Link to="/monthly">월간행사</Link>
           <ul className={cn(styles.gnbDepth2)}>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/monthly" className="rounded-full">
                 월별 행사지
               </Link>
             </li>
@@ -104,27 +104,27 @@ export const Gnb = () => {
           <Link to="/archive">커뮤니티</Link>
           <ul className={cn(styles.gnbDepth2)}>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/archive" className="rounded-full">
                 자료실
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/tip" className="rounded-full">
                 상품사용 꿀팁
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/qna" className="rounded-full">
                 Q&A
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/school" className="rounded-full">
                 우리학교 급식자랑
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/notice" className="rounded-full">
                 공지사항
               </Link>
             </li>
@@ -134,12 +134,12 @@ export const Gnb = () => {
           <Link to="/event">이벤트</Link>
           <ul className={styles.gnbDepth2}>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/event" className="rounded-full">
                 진행중 이벤트
               </Link>
             </li>
             <li>
-              <Link to="/" className="rounded-full">
+              <Link to="/endedEvent" className="rounded-full">
                 지난 이벤트
               </Link>
             </li>

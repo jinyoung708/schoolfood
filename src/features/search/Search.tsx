@@ -27,7 +27,7 @@ export const Search = () => {
       <div className="flex flex-col gap-[60px] lg:gap-[120px]">
         {/* 상품 */}
         <SearchBoard title="상품">
-          <ul className="grid flex-wrap gap-x-[13px] lg:gap-x-[24px] gap-y-[30px] lg:gap-y-[60px] grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+          <ul className="grid gap-x-[13px] lg:gap-x-[24px] gap-y-[30px] lg:gap-y-[60px] grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
             <li>
               <ProductList login />
             </li>
@@ -66,7 +66,7 @@ export const Search = () => {
           <ThumbList pcCol={3}>
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -79,7 +79,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -91,7 +91,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -104,7 +104,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -117,7 +117,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -129,7 +129,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/temp1.jpg',
+                src: '/schoolfood/images/img/temp1.jpg',
                 alt: '우리학교 급식자랑 썸네일',
                 ratio: '16/9',
               }}
@@ -174,7 +174,7 @@ export const Search = () => {
           <ThumbList pcCol={3}>
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}
@@ -188,7 +188,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}
@@ -201,7 +201,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}
@@ -214,7 +214,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}
@@ -227,7 +227,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}
@@ -240,7 +240,7 @@ export const Search = () => {
             />
             <ThumbItem
               thumb={{
-                src: '/images/img/recipe01.jpg',
+                src: '/schoolfood/images/img/recipe01.jpg',
                 alt: '이벤트 썸네일',
                 ratio: '16/9',
               }}

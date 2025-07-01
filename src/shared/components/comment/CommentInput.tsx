@@ -23,7 +23,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -35,7 +35,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -47,7 +47,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -59,7 +59,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -71,7 +71,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -83,7 +83,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />
@@ -95,7 +95,7 @@ export const CommentInput = ({
               <RatioImage
                 ratio="1/1"
                 isContain
-                src="/images/img/product01.jpg"
+                src="/schoolfood/schoolfood/images/img/product01.jpg"
                 alt="상품 이미지"
                 className="rounded-[16px]"
               />

@@ -8,25 +8,25 @@ export const CategoryTop = () => {
         <ImageGallery
           items={[
             {
-              thumbSrc: '/images/img/product01.jpg',
-              mainSrc: '/images/img/productMain01.jpg',
+              thumbSrc: '/schoolfood/schoolfood/images/img/product01.jpg',
+              mainSrc: '/schoolfood/schoolfood/images/img/productMain01.jpg',
               badges: ['HACCP'],
             },
             {
-              thumbSrc: '/images/img/product02.jpg',
-              mainSrc: '/images/img/product02.jpg',
+              thumbSrc: '/schoolfood/schoolfood/images/img/product02.jpg',
+              mainSrc: '/schoolfood/schoolfood/images/img/product02.jpg',
             },
             {
-              thumbSrc: '/images/img/product03.jpg',
-              mainSrc: '/images/img/product03.jpg',
+              thumbSrc: '/schoolfood/schoolfood/images/img/product03.jpg',
+              mainSrc: '/schoolfood/schoolfood/images/img/product03.jpg',
             },
             {
-              thumbSrc: '/images/img/product04.jpg',
-              mainSrc: '/images/img/product04.jpg',
+              thumbSrc: '/schoolfood/schoolfood/images/img/product04.jpg',
+              mainSrc: '/schoolfood/schoolfood/images/img/product04.jpg',
             },
             {
-              thumbSrc: '/images/img/product05.jpg',
-              mainSrc: '/images/img/product05.jpg',
+              thumbSrc: '/schoolfood/schoolfood/images/img/product05.jpg',
+              mainSrc: '/schoolfood/schoolfood/images/img/product05.jpg',
             },
           ]}
         />

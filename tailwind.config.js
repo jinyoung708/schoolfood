@@ -12,7 +12,7 @@ const config = {
     'top-[60px]',
     'lg:top-[118px]',
     'lg:top-[0px]',
-    'scroll-mt-[120px]',
+    'scroll-mt-[112px]',
     'lg:scroll-mt-[200px]',
   ],
   theme: {
@@ -39,6 +39,7 @@ const config = {
         gray: {
           50: '#F9F9F9',
           100: '#F4F4F4',
+          150: '#F1F1F1',
           200: '#EEE',
           300: '#DDD',
           350: '#CCC',

@@ -5,9 +5,11 @@ import { Icon } from '../Icon';
 interface InputCheckboxProps {
   children?: ReactNode;
   className?: string;
+  iconSize?: string;
+  type2?: boolean;
 }
 
-export const InputCheckbox = ({ children, className }: InputCheckboxProps) => {
+export const InputCheckbox = ({ children, className, iconSize, type2 }: InputCheckboxProps) => {
   const [checked, setChecked] = useState(false);
   const id = useId();
 
@@ -16,7 +18,14 @@ export const InputCheckbox = ({ children, className }: InputCheckboxProps) => {
   };
 
   return (
-    <>
+    <label
+      htmlFor={id}
+      className={cn(
+        'inline-flex items-center gap-[4px] cursor-pointer',
+        className,
+        type2 && checked && 'font-medium text-secondary lg:font-normal lg:text-gray-800',
+      )}
+    >
       <input
         type="checkbox"
         id={id}
@@ -24,13 +33,12 @@ export const InputCheckbox = ({ children, className }: InputCheckboxProps) => {
         onChange={handleChange}
         className="sr-only"
       />
-      <label
-        htmlFor={id}
-        className={cn('inline-flex items-center gap-[4px] cursor-pointer', className)}
-      >
-        {checked ? <Icon src="checkbox_check.svg" /> : <Icon src="checkbox.svg" />}
-        {children}
-      </label>
-    </>
+      {checked ? (
+        <Icon src="checkbox_check.svg" className={cn(iconSize)} />
+      ) : (
+        <Icon src="checkbox.svg" className={cn(iconSize)} />
+      )}
+      {children}
+    </label>
   );
 };
