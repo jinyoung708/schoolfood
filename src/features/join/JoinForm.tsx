@@ -3,6 +3,7 @@
  * Description: 회원가입 폼 컴포넌트
  */
 import { Button } from '@headlessui/react';
+import { useMediaQuery } from 'react-responsive';
 import { InputRadio } from '~/shared/components/form/InputRadio';
 import { InputSearch } from '~/shared/components/form/InputSearch';
 import { TermsOfService } from '~/shared/components/form/TermsOfService';
@@ -14,6 +15,8 @@ import { Subtop } from '~/shared/components/subtop';
 import { WriteList } from '~/shared/components/List/WriteList';
 
 export const JoinForm = () => {
+  const isPC = useMediaQuery({ minWidth: 1024 });
+
   return (
     <div className="container mx-auto">
       <div className="flex flex-col gap-[30px] lg:gap-[80px] pt-[16px] lg:pt-0">
@@ -57,12 +60,12 @@ export const JoinForm = () => {
             <div>
               <InputText
                 label="휴대폰"
-                placeholder="전화번호를 입력해주세요."
+                placeholder={isPC ? '전화번호를 입력해주세요.' : '전화번호 입력'}
                 required
                 btnName="인증번호 전송"
               />
               <InputText
-                placeholder="인증번호를 입력해주세요."
+                placeholder={isPC ? '인증번호를 입력해주세요.' : '인증번호 입력'}
                 required
                 time
                 btnName="인증번호 확인"

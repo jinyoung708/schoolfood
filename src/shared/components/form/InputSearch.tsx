@@ -6,19 +6,20 @@
  */
 import { Button, Input } from '@headlessui/react';
 import { useState, ChangeEvent } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import styles from '~/shared/css/Form.module.css';
 import { cn } from '~/shared/utils';
 import { Icon } from '../Icon';
 
 interface InputSearchProps {
   label?: string;
-  placeholder?: string;
   className?: string;
 }
 
-export const InputSearch = ({ label, placeholder, className }: InputSearchProps) => {
+export const InputSearch = ({ label, className }: InputSearchProps) => {
   const [keyword, setKeyword] = useState('');
   const [showResults, setShowResults] = useState(false);
+  const isPC = useMediaQuery({ minWidth: 1024 });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setKeyword(e.target.value);
@@ -43,8 +44,8 @@ export const InputSearch = ({ label, placeholder, className }: InputSearchProps)
         <Input
           value={keyword}
           onChange={handleChange}
-          className="w-full"
-          placeholder={placeholder || '학교명을 입력하세요'}
+          className={cn('w-full', keyword && styles.padding)}
+          placeholder={isPC ? '학교명을 띄어쓰기 없이 검색해주세요.' : '학교명 띄어쓰기 없이 검색'}
         />
         <div className={styles.btnWrap}>
           {keyword !== '' && (

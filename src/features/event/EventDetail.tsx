@@ -10,7 +10,7 @@ import { Subtop } from '~/shared/components/subtop';
 
 export const EventDetail = () => {
   return (
-    <div className="container mx-auto pt-[16px] lg:pt-0">
+    <div className="container mx-auto">
       <Subtop breadcrumb={['HOME', '이벤트', '진행중인 이벤트']} />
       <PostTop
         category="진행중인 이벤트"
@@ -21,6 +21,7 @@ export const EventDetail = () => {
           dday: 5,
         }}
         commentCount={10}
+        className="pt-[16px] lg:pt-0"
       />
       <PostContent className="mt-[30px] lg:mt-[120px]" />
       <div className="flex justify-center items-center flex-wrap gap-[8px] mt-[40px] lg:mt-[120px]">

@@ -141,10 +141,7 @@ export const ModalPopup = () => {
                 승인 전까지 기존 근무처로 서비스 이용 가능합니다.
               </p>
               <div className="mt-[30px] text-left">
-                <InputSearch
-                  label="변경 근무처"
-                  placeholder="학교명을 띄어쓰기 없이 검색해주세요."
-                />
+                <InputSearch label="변경 근무처" />
               </div>
               <div className="mt-[30px] text-left">
                 <InputText required label="변경 식수" placeholder="식수를 숫자만 입력해주세요." />

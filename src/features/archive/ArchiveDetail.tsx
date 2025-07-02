@@ -12,7 +12,7 @@ import { Subtop } from '~/shared/components/subtop';
 
 export const ArchiveDetail = () => {
   return (
-    <div className="container mx-auto pt-[16px] lg:pt-0">
+    <div className="container mx-auto">
       <Subtop breadcrumb={['HOME', '커뮤니티', '자료실']} />
       <PostTop
         category="자료실"
@@ -26,6 +26,7 @@ export const ArchiveDetail = () => {
           </div>
         }
         commentCount={3}
+        className="pt-[16px] lg:pt-0"
       />
       <PostContent className="mt-[30px] lg:mt-[120px]" />
       <PostedAttached className="mt-[60px] lg:mt-[80px]" />

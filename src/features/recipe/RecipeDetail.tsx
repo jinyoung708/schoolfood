@@ -17,25 +17,25 @@ export const RecipeDetail = () => {
       <Subtop breadcrumb={['HOME', '레시피', '추천 레시피']} />
       <div className="lg:flex gap-[48px]">
         <div className="mx-[-16px] lg:mx-0 lg:w-[55.98%]">
-          {/* 1) 이미지 비율맞추고 비어보이는영역 배경색 넣은 경우 */}
+          {/* 1) 텍스트 영역과 높이 동일, 이미지 비율맞추고 빈 영역 배경색 넣은 경우 */}
           {/* <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="h-full w-full aspect-[860/506] object-contain bg-gray-100 lg:rounded-[16px]"
+            className="h-full w-full aspect-[16/9] object-contain bg-gray-150 lg:rounded-[16px]"
           /> */}
 
-          {/* 2) 이미지 꽉 채운 경우 */}
+          {/* 2) 텍스트 영역과 높이 동일, 이미지 꽉 채운 경우 */}
           {/* <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="h-full w-full aspect-[860/506] object-cover lg:rounded-[16px]"
+            className="h-full w-full aspect-[16/9] object-cover bg-gray-150 lg:rounded-[16px]"
           /> */}
 
-          {/* 3) 이미지 비율맞추고 상단 고정 */}
+          {/* 3) 높이 이미지 사이즈, 이미지 비율맞춘 경우 */}
           <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="w-full aspect-[860/506] object-contain lg:rounded-[16px]"
+            className="w-full aspect-[16/9] object-contain bg-gray-150 lg:rounded-[16px]"
           />
         </div>
 

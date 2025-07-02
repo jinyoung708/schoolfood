@@ -44,7 +44,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title:
@@ -58,7 +58,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title: '우리학교 새학기 식단은 이렇게 했어요~ ',
@@ -71,7 +71,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title:
@@ -85,7 +85,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title: '이번에 아이들도 정말 잘 먹더라고요 :) 그래서 공유합니다!!',
@@ -98,7 +98,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title:
@@ -112,7 +112,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title: '우리학교 새학기 식단은 이렇게 했어요~ ',
@@ -125,7 +125,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title:
@@ -139,7 +139,7 @@ export const SchoolList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '4/3',
             }}
             info={{
               title: '이번에 아이들도 정말 잘 먹더라고요 :) 그래서 공유합니다!!',

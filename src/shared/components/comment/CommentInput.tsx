@@ -16,7 +16,7 @@ export const CommentInput = ({
 }: CommentInputProps) => {
   return (
     <div className={cn('flex flex-col items-end gap-[12px]', className)}>
-      <div className="flex flex-col justify-start gap-[20px] w-full relative border border-gray-500 bg-white rounded-[8px] p-[16px] pb-[40px] overflow-hidden">
+      <div className="flex flex-col justify-start gap-[20px] w-full relative border border-gray-300 bg-white rounded-[8px] p-[16px] pb-[40px] overflow-hidden">
         {hasAttachment && (
           <Swiper slidesPerView="auto" spaceBetween={8} className="overflow-visible m-0">
             <SwiperSlide className="relative w-[100px]">
@@ -118,7 +118,10 @@ export const CommentInput = ({
       </div>
       <div className="flex items-center gap-[8px]">
         {hasAttachment && (
-          <button className="btn-gray-400 btn-md flex items-center gap-[4px]" type="button">
+          <button
+            className="btn-gray-400 btn-md flex items-center gap-[4px] btn-icon"
+            type="button"
+          >
             <span>이미지 추가</span>
             <Icon src="plus_16.svg" />
           </button>

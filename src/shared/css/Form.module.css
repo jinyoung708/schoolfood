@@ -53,7 +53,17 @@
   transform: translateY(-50%);
   @apply text-base font-medium text-point-red; 
 }
+.textWrap .status {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  @apply text-base text-gray-500; 
+}
 .textWrap .time + input {
+  padding-right: 80px;
+}
+.textWrap .status + input {
   padding-right: 80px;
 }
 .textWrap input,
@@ -95,6 +105,9 @@
 }
 
 .searchWrap input {
+  padding-right: 70px;
+}
+.searchWrap .padding {
   padding-right: 100px;
 }
 .searchWrap .btnWrap {

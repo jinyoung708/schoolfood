@@ -41,7 +41,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -56,7 +56,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -71,7 +71,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -86,7 +86,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -101,7 +101,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -116,7 +116,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}
@@ -131,7 +131,7 @@ export const EndedEventList = () => {
             info={{
               title:
                 '영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관 영양POP)관절과 척추 건강을 지키는 올바른 습관',
-              link: '/eventDetail',
+              link: '/event/detail',
               commentCount: 21,
               period: { start: '2023.10.01', end: '2023.10.31', dday: 1 },
             }}

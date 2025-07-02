@@ -10,7 +10,7 @@ import { Subtop } from '~/shared/components/subtop';
 
 export const QnaDetail = () => {
   return (
-    <div className="container mx-auto pt-[16px] lg:pt-0">
+    <div className="container mx-auto">
       <Subtop breadcrumb={['HOME', '커뮤니티', 'Q&A']} />
       <PostTop
         category="Q&A"
@@ -20,6 +20,7 @@ export const QnaDetail = () => {
           at: '2023.10.01 12:36',
         }}
         commentCount={10}
+        className="pt-[16px] lg:pt-0"
       />
       <PostContent className="mt-[30px] lg:mt-[120px]" />
       <div className="flex justify-center items-center flex-wrap gap-[8px] mt-[40px] lg:mt-[120px]">

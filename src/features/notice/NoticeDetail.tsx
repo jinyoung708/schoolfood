@@ -11,7 +11,7 @@ import { Subtop } from '~/shared/components/subtop';
 
 export const NoticeDetail = () => {
   return (
-    <div className="container mx-auto pt-[16px] lg:pt-0">
+    <div className="container mx-auto">
       <Subtop breadcrumb={['HOME', '커뮤니티', '공지사항']} />
       <PostTop
         category="공지사항"
@@ -24,6 +24,7 @@ export const NoticeDetail = () => {
         created={{
           at: '2023.10.01',
         }}
+        className="pt-[16px] lg:pt-0"
       />
       <PostContent className="mt-[30px] lg:mt-[120px]" />
       <PostedAttached className="mt-[60px] lg:mt-[80px]" />

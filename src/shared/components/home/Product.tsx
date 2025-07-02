@@ -11,7 +11,6 @@ import { ProductList } from '~/shared/components/List/ProductList';
 import styles from '~/shared/css/Home.module.css';
 import { Icon } from '../Icon';
 import { cn } from '~/shared/utils';
-import { Mobile, PC } from '../Responsive';
 
 export const Product = () => {
   return (

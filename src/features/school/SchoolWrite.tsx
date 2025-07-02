@@ -23,7 +23,7 @@ export const SchoolWrite = () => {
       <div className="lg:mt-[80px]">
         <WriteList>
           <InputText label="제목" placeholder="제목을 입력해주세요." />
-          <InputTextarea label="제목" placeholder="급식을 소개해주세요." />
+          <InputTextarea label="소개 내용" placeholder="급식을 소개해주세요." />
           <InputFileImage label="급식 등록" />
           <InputCheckbox className="gap-[8px] items-start">
             <span className="text-base">

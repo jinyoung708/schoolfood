@@ -73,8 +73,8 @@ export const InputFileImage = ({ label, required, className }: InputFileImagePro
           />
           <div
             className={cn(
-              'flex items-center relative justify-center w-full border border-dashed border-gray-350 rounded-[8px]',
-              !img.previewUrl && 'cursor-pointer h-[300px] lg:h-[553px]',
+              'flex items-center relative justify-center w-full border border-dashed border-gray-350 rounded-[8px] aspect-[4/3]',
+              !img.previewUrl && 'cursor-pointer',
             )}
             {...(!img.previewUrl && {
               onClick: () => document.getElementById(`image-input-${img.id}`)?.click(),
@@ -86,7 +86,7 @@ export const InputFileImage = ({ label, required, className }: InputFileImagePro
                 <img
                   src={img.previewUrl}
                   alt={`첨부 이미지 미리보기 ${index + 1}`}
-                  className="w-full h-full object-contain aspect-[4/3]"
+                  className="w-full object-contain h-full"
                 />
 
                 <div className="flex items-center gap-[11px] lg:justify-center absolute left-0 bottom-[13px] lg:bottom-[23px] w-full px-[12px] lg:px-[30px] ">

@@ -58,13 +58,13 @@ export const CategoryContentContainer = ({ className }: CategoryContentProps) =>
       {/* 이동 탭 */}
       <div
         className={cn(
-          `sticky z-10 bg-white top-[${OFFSETS.mobile.tabTop}px] transition-[top] duration-300 pt-[16px] lg:pt-[20px]`,
+          `sticky z-10 bg-white top-[${OFFSETS.mobile.tabTop}px] transition-[top] duration-300 pt-[16px] lg:pt-[20px] -mx-[16px] lg:mx-0`,
           isHeaderFixed
             ? `lg:top-[${OFFSETS.pc.fixed.tabTop}px]`
             : `lg:top-[${OFFSETS.pc.notFixed.tabTop}px]`,
           // before element로 헤더와 탭 사이의 유격 가림
           isCategoryTabFixed &&
-            '-mx-[16px] lg:mx-0 lg:before:block before:absolute before:bottom-full before:w-full before:h-full before:bg-white',
+            'lg:before:block before:absolute before:bottom-full before:w-full before:h-full before:bg-white',
         )}
         ref={tabContainerRef}
       >

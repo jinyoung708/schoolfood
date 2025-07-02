@@ -37,7 +37,7 @@ export const RecipeList = () => {
         <ThumbList pcCol={3}>
           <ThumbItem
             thumb={{
-              src: '/images/img/temp1.jpg',
+              src: '/images/img/recipe01.jpg',
               alt: '우리학교 급식자랑 썸네일',
               ratio: '16/9',
             }}

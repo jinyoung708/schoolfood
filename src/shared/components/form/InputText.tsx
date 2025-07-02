@@ -48,6 +48,7 @@ interface InputTextProps {
   value?: string;
   disable?: boolean;
   readOnly?: boolean;
+  status?: string;
 }
 
 export const InputText = ({
@@ -65,6 +66,7 @@ export const InputText = ({
   value,
   disable,
   readOnly,
+  status,
 }: InputTextProps) => {
   const [inputValue, setInputValue] = useState(value ?? '');
 
@@ -76,6 +78,7 @@ export const InputText = ({
       <div className="flex gap-[8px]">
         <div className="relative grow">
           {time && <span className={styles.time}>02:00</span>}
+          {status && <span className={styles.status}>{status}</span>}
           <Input
             name="full_name"
             type={type}

@@ -3,21 +3,23 @@
  * Description: 개인정보 수정 컴포넌트
  */
 import { Button } from '@headlessui/react';
+import { useMediaQuery } from 'react-responsive';
 import { Subtop } from '../../shared/components/subtop';
 import { WriteList } from '~/shared/components/List/WriteList';
 import { InputText } from '~/shared/components/form/InputText';
 import { InputEmail } from '~/shared/components/form/InputEmail';
 import { InputRadio } from '~/shared/components/form/InputRadio';
-import { InputSearch } from '~/shared/components/form/InputSearch';
 import styles from '~/shared/css/Join.module.css';
 import { cn } from '~/shared/utils';
 import { InputCheckbox } from '~/shared/components/form/InputCheckbox';
 import { Icon } from '~/shared/components/Icon';
 
 export const EditProfile = () => {
+  const isPC = useMediaQuery({ minWidth: 1024 });
+
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col gap-[30px] lg:gap-[80px] pt-[16px] lg:pt-0">
+      <div className="flex flex-col gap-[30px] lg:gap-[80px]">
         <Subtop
           pageTitle="마이페이지"
           breadcrumb={['HOME', '마이페이지']}
@@ -63,7 +65,6 @@ export const EditProfile = () => {
                 label="아이디"
                 placeholder="아이디를 입력해주세요."
                 required
-                btnName="중복확인"
                 desc="5~12자 영문 소문자, 숫자 가능"
                 errorMessage="사용 불가능한 아이디입니다."
                 successMessage="사용 가능한 아이디입니다."
@@ -71,7 +72,7 @@ export const EditProfile = () => {
             </div>
             <div>
               <InputText
-                label="비밀번호"
+                label="비밀번호 변경"
                 placeholder="비밀번호를 입력해주세요."
                 required
                 desc="8자 이상 영문, 숫자, 특수문자 조합"
@@ -87,12 +88,12 @@ export const EditProfile = () => {
             <div>
               <InputText
                 label="휴대폰"
-                placeholder="전화번호를 입력해주세요."
+                placeholder={isPC ? '전화번호를 입력해주세요.' : '전화번호 입력'}
                 required
                 btnName="인증번호 전송"
               />
               <InputText
-                placeholder="인증번호를 입력해주세요."
+                placeholder={isPC ? '인증번호를 입력해주세요.' : '인증번호 입력'}
                 required
                 time
                 btnName="인증번호 확인"
@@ -115,7 +116,12 @@ export const EditProfile = () => {
               />
             </div>
             <div>
-              <InputSearch />
+              <InputText
+                label="근무처"
+                required
+                placeholder="학교명을 입력하세요"
+                btnName="근무처 변경"
+              />
             </div>
             <div>
               <InputText
@@ -126,12 +132,23 @@ export const EditProfile = () => {
               />
             </div>
             <div>
-              <InputRadio
-                name="joinPath"
-                label="가입경로"
+              <InputText
+                label="근무처"
                 required
-                options={['담당 영업사원', 'sns', '검색', '기타']}
-                defaultValue="담당 영업사원"
+                placeholder="학교명을 입력하세요"
+                value="[서울특별시 마포구]상암고등학교"
+                readOnly
+                status="승인중"
+              />
+            </div>
+            <div>
+              <InputText
+                label="식수"
+                placeholder="식수를 숫자만 입력해주세요."
+                required
+                type="number"
+                readOnly
+                status="승인중"
               />
             </div>
             <div className="border-t-2 border-gray-800 pt-[24px] lg:pt-[30px]">

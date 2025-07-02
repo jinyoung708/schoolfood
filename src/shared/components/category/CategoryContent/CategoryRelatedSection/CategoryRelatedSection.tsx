@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import styled from 'styled-components';
 import { CategorySectionTitle } from '../common/CategorySectionTitle';
 import { ThumbItem } from '~/shared/components/List/ThumbItem';
 import { cn } from '~/shared/utils';
-import styled from 'styled-components';
 
 const StyledSwiper = styled(Swiper)`
   .swiper-pagination {
@@ -25,12 +25,18 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
       <div className="-mx-[16px] lg:mx-0">
         <StyledSwiper
           modules={[Pagination]}
-          pagination
+          slidesPerView={1}
           spaceBetween={24}
+          pagination={{
+            clickable: true,
+            enabled: true,
+          }}
           breakpoints={{
             1024: {
               slidesPerView: 3,
-              pagination: false,
+              pagination: {
+                enabled: false,
+              },
             },
           }}
           className={cn('w-full px-[16px] lg:px-0')}

@@ -79,7 +79,7 @@ export const ImageGallery = ({ items }: ImageGalleryProps) => {
                 className="aspect-[375/468] lg:aspect-[576/720] lg:rounded-[16px]"
               />
               {item.badges && item.badges.length > 0 && (
-                <div className="absolute top-[20px] left-[20px] z-[1] flex items-center flex-wrap">
+                <div className="absolute top-[20px] left-[20px] z-[1] flex items-center flex-wrap w-[40px] lg:w-auto">
                   {item.badges.map((badge, badgeIndex) => (
                     <div key={badge + badgeIndex}>
                       {(() => {

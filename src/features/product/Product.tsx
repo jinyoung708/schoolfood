@@ -14,7 +14,7 @@ export const Product = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col gap-[30px] lg:gap-[80px]">
+      <div className="flex flex-col gap-[30px] lg:gap-[80px] pt-[16px] lg:pt-0">
         <Subtop pageTitle="이달의 메인상품" breadcrumb={['HOME', '메인상품']} />
         <ListTopContainer
           leftChildren={
