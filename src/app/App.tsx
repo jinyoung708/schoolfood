@@ -8,7 +8,6 @@ import { useNetworkOffline } from './error/useNetworkOffline';
 import { NetworkErrorPage } from '~/pages/error';
 import { PageTitleUpdater } from '~/shared/utils';
 import { HeaderProvider } from '~/shared/context/HeaderContext';
-import ScrollToTop from '~/routes/ScrollToTop';
 
 const App = () => {
   useEffect(() => {
@@ -39,8 +38,7 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <HeaderProvider>
         {isNetworkOffline && <NetworkErrorPage />}
-        <BrowserRouter basename="/schoolfood">
-          <ScrollToTop />
+        <BrowserRouter>
           <PageTitleUpdater />
           <Routes />
         </BrowserRouter>

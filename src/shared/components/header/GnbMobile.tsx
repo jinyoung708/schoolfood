@@ -2,8 +2,8 @@
  * Component: GnbMobile.tsx
  * Description: 모바일 Gnb 컴포넌트
  */
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@headlessui/react';
 import styles from '~/shared/css/Header.module.css';
 import { Icon } from '~/shared/components/Icon';
@@ -24,13 +24,8 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
   const { searchActive, toggleSearch } = useHeaderContext();
   const isActive = (index: number) => (activeIndex === index ? styles.active : '');
   const login = true; // 로그인 여부 (임시)
-  const location = useLocation();
 
   useScrollLock(menuOpen, 'mo');
-
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
 
   return (
     <>
@@ -155,11 +150,6 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                 <li>
                   <Button onClick={() => setActiveIndex(6)} className={isActive(6)}>
                     이벤트
-                  </Button>
-                </li>
-                <li>
-                  <Button onClick={() => setActiveIndex(7)} className={isActive(7)}>
-                    마이페이지
                   </Button>
                 </li>
               </ul>
@@ -291,37 +281,6 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                   </li>
                   <li>
                     <Link to="/endedEvent">지난 이벤트</Link>
-                  </li>
-                </ul>
-              )}
-              {isActive(7) && (
-                <ul className={cn(styles.menuDepth2)}>
-                  <li>
-                    <Link to="/join">회원가입</Link>
-                  </li>
-                  <li>
-                    <Link to="/login">로그인</Link>
-                  </li>
-                  <li>
-                    <Link to="/mypage">관심상품</Link>
-                  </li>
-                  <li>
-                    <Link to="/mypage/post">작성한 글</Link>
-                  </li>
-                  <li>
-                    <Link to="/mypage/edit">개인정보 수정</Link>
-                  </li>
-                  <li>
-                    <Link to="/modal">모달팝업</Link>
-                  </li>
-                  <li>
-                    <Link to="/error1">에러1</Link>
-                  </li>
-                  <li>
-                    <Link to="/error2">에러2</Link>
-                  </li>
-                  <li>
-                    <Link to="/error3">에러3</Link>
                   </li>
                 </ul>
               )}
