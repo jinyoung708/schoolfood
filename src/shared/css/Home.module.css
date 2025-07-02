@@ -1,0 +1,213 @@
+/* 메인 타이틀 */
+.titleBox {
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.titleBox .title1 {
+  font-family: 'CJ ONLYONE NEW title';
+  font-weight: 500;
+  @apply text-2xl text-primary;
+}
+.titleBox .title2 span {
+  font-family: 'CJ ONLYONE NEW title';
+  font-weight: 700;
+  @apply text-34;
+}
+.titleBox .btnAll {
+  @apply text-lg text-gray-500;
+  font-weight: 500;
+  gap: 8px;
+}
+.titleBox.white .title1,
+.titleBox.white .title2 span,
+.titleBox.white .btnAll {
+  @apply text-white;
+}
+
+/* 비주얼 */
+.visualControls {
+  right: 16px;
+  padding-right: calc((100vw - 1568px) / 2);
+  bottom: 40px;
+  gap: 8px;
+  z-index: 1;
+}
+.visualControls .btnPlay {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+.visualControls .pagination {
+  gap: 8px;
+  padding: 0 12px;
+  height: 32px;
+  background-color: rgba(51, 51, 51, 0.5);
+  @apply text-lg;
+  font-weight: 500;
+}
+.visualControls .pagination .current {
+  @apply text-white;
+}
+.visualControls .pagination .bar {
+  width: 1px;
+  height: 12px;
+  @apply bg-gray-300;
+}
+.visualControls .pagination .total {
+  @apply text-gray-300;
+}
+
+/* 레시피 */
+.recipeWrapper {
+  background: url('/images/img/wave.png') repeat-x 0 0;
+  padding-bottom: 38px;
+}
+.recipeWrapper :global(.swiper-pagination-horizontal.swiper-pagination-bullets) {
+  position: absolute;
+  bottom: -38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62.43%;
+  text-align: center;
+}
+.imgSwiperWrap {
+  position: relative;
+  width: 62.43%;
+}
+.imgSwiperWrap::after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 36px;
+  top: -54px;
+  width: 176px;
+  height: 119px;
+  background: url('/images/img/badge.png') no-repeat center/contain;
+  z-index: 1;
+}
+.imgSwiper .play {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.imgSwiper .play::after {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  width: 112px;
+  height: 112px;
+  background: url('/images/icon/play_big.svg') no-repeat center/contain;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.textSwiperWrap {
+  width: 37.57%;
+  padding: 40px 48px;
+}
+.textSwiper .relatedProducts {
+  margin-top: 50px;
+}
+
+/* 숏폼 레시피 */
+.shortformWrapper {
+  background: url('/images/img/bg_shortform.png') repeat-x 0 0;
+  padding-top: 120px;
+}
+
+/* 스폰서 */
+.sponerList {
+  @apply px-[16px] py-[12px] gap-x-[32.5px] gap-y-[8px] lg:p-[40px] lg:gap-[45.2px];
+}
+.sponerList a,
+.sponerList button {
+  display: block;
+  @apply w-[calc((100%-65px)/3)] lg:w-auto;
+}
+.sponerList img {
+  mix-blend-mode: darken;
+}
+
+@media (max-width: 1023px) {
+  /* 메인 타이틀 */
+  .titleBox {
+    margin-bottom: 20px;
+    gap: 4px;
+  }
+  .titleBox .title1 {
+    @apply text-sm;
+  }
+  .titleBox .title2 span {
+    @apply text-lg;
+  }
+  .titleBox .btnAll {
+    @apply text-sm;
+    gap: 2px;
+  }
+
+  /* 비주얼 */
+  .visualControls {
+    right: 20px;
+    bottom: 20px;
+  }
+  .visualControls .btnPlay {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+  }
+  .visualControls .pagination {
+    height: 24px;
+    padding: 0 8px;
+    @apply text-sm;
+    gap: 4px;
+  }
+  .visualControls .pagination .bar {
+    height: 10px;
+  }
+
+  /* 레시피 */
+  .recipeWrapper {
+    background-size: auto 190px;
+    padding-bottom: 0;
+  }
+  .recipeWrapper :global(.swiper-pagination-horizontal.swiper-pagination-bullets) {
+    position: static;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .imgSwiperWrap {
+    width: 100%;
+  }
+  .imgSwiperWrap::after {
+    right: 12px;
+    top: -21px;
+    width: 88px;
+    height: 60px;
+  }
+  .imgSwiper .play::after {
+    width: 64px;
+    height: 64px;
+  }
+  .textSwiperWrap {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+  }
+  .textSwiper .recipeInfoBox {
+    padding: 0 4px;
+  }
+  .textSwiper .relatedProducts {
+    margin-top: 24px;
+  }
+
+  /* 숏폼 레시피 */
+  .shortformWrapper {
+    padding-top: 48px;
+    background-size: auto 356px;
+  }
+  .shortformWrapper .titleBox {
+    padding: 0 16px;
+  }
+}

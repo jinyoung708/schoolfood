@@ -1,0 +1,158 @@
+.stopItem {
+  background-color: rgba(0, 0, 0, 0.3);
+  @apply text-white text-2xl;
+  font-weight: 700;
+}
+.BtnLogin {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  @apply text-primary border border-primary;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.productPrice {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  gap: 8px;
+  @apply text-gray-500;
+  margin-bottom: 2px;
+}
+.productPrice s {
+  @apply text-gray-400;
+}
+
+.productDiscount {
+  display: flex;
+  gap: 8px;
+  height: 36px;
+  align-items: center;
+}
+.productDiscount .percent {
+  @apply text-2xl text-secondary;
+  font-weight: 600;
+}
+.productDiscount strong {
+  @apply text-2xl;
+  font-weight: 600;
+}
+
+.dividerLine {
+  margin: 12px 0;
+  @apply border-t border-gray-100;
+}
+
+.unitPriceBox {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.unitPriceBox > div {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+.unitRow {
+  margin-right: auto;
+}
+.unitRow .unit {
+  @apply text-gray-500;
+  margin-right: auto;
+}
+.originalPriceRow {
+  align-items: flex-end;
+}
+.originalPriceRow .originalPrice {
+  @apply text-gray-400;
+}
+.discountPriceRow {
+  align-items: flex-end;
+}
+.discountPriceRow .discountPrice {
+  @apply text-lg;
+  font-weight: 500;
+}
+.tagBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.tagBox span {
+  @apply text-sm text-gray-500 bg-gray-100;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.noPriceText {
+  @apply text-point-red text-lg;
+}
+.ingPriceText {
+  @apply text-lg;
+}
+
+@media (max-width: 1023px) {
+  .stopItem {
+    @apply text-lg;
+  }
+  .BtnLogin {
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+
+  .productPrice {
+    height: 20px;
+    @apply text-xs;
+    margin-bottom: 0;
+  }
+
+  .productDiscount {
+    height: 32px;
+  }
+  .productDiscount .percent,
+  .productDiscount strong {
+    @apply text-xl;
+  }
+  .small .productDiscount .percent,
+  .small .productDiscount strong {
+    @apply text-22;
+  }
+
+  .dividerLine {
+    margin: 6px 0;
+  }
+
+  .unitPriceBox {
+    gap: 8px;
+    @apply text-xs;
+  }
+  .unitPriceBox > div {
+    gap: 0
+  }
+  .discountPriceRow .discountPrice {
+    @apply text-xs;
+  }
+
+  .tagBox {
+    margin-top: 8px;
+    gap: 4px;
+  }
+  .tagBox span {
+    @apply text-10;
+    padding: 0 4px;
+  }
+
+  .noPriceText {
+    @apply text-sm;
+  }
+  .ingPrice {
+    @apply text-sm;
+  }
+}

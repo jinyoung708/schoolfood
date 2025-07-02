@@ -1,0 +1,9 @@
+.joinWrap {
+  @apply pt-[-4px] lg:pt-[0];
+}
+.form {
+  @apply pb-[25px] lg:pb-[30px] border-b-[1px] border-b-gray-300;
+}
+.form > div:not(:last-child) {
+  margin-bottom: 30px;
+}

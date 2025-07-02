@@ -1,0 +1,222 @@
+@import url('/fonts/CJ_ONLYONE/cj_onlyone.css');
+@import url('/fonts/pretendard/pretendard.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  @apply text-gray-800;
+  letter-spacing: -0.03em;
+  word-break: break-all;
+}
+
+@layer utilities {
+  .container {
+    max-width: 1568px;
+    padding: 0 calc(16px + var(--safeArea-l));
+  }
+  
+  .sub_container {
+    @apply pt-[calc(60px+var(--safeArea-t))] pb-[30px] lg:pt-[calc(134px+var(--safeArea-t))] lg:pb-[0];
+  }
+
+  .container.px-0 {
+    padding: 0;
+  }
+
+  .blind {
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .swiper-fade .swiper-slide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .swiper-fade .swiper-slide-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .scrollbar-custom,
+  .scrollbar-custom2 {
+    @apply overflow-y-auto overflow-x-hidden;
+  }
+  .scrollbar-custom::-webkit-scrollbar {
+    @apply bg-transparent;
+    -webkit-appearance: none;
+    width: 9px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full;
+    background-clip: content-box;
+    border: 3px solid transparent;
+  }
+  .scrollbar-custom2::-webkit-scrollbar {
+    @apply bg-transparent;
+    -webkit-appearance: none;
+    width: 5px;
+  }
+  .scrollbar-custom2::-webkit-scrollbar-thumb {
+    @apply bg-[#F1F1F1] rounded-full;
+  }
+}
+
+@layer base {
+  :root {
+    --header-z: 9999;
+    --footer-z: 9998;
+    --safeArea-t: env(safe-area-inset-top);
+    --safeArea-l: env(safe-area-inset-left);
+    --safeArea-r: env(safe-area-inset-right);  
+    --safeArea-b: env(safe-area-inset-bottom);
+  }
+}
+@layer components {
+  /* 버튼 */
+  .btn-xs {/* h-24 */
+    @apply px-[8px] py-[3px] text-xs rounded-[4px] font-medium;
+  }
+  .btn-sm { /* h-32 */
+    @apply px-[12px] py-[5px] text-xs rounded-[6px] font-medium;
+  }
+  .btn-md { /* h-40 */
+    @apply px-[16px] py-[7px] text-base rounded-[6px] font-medium;
+  }
+  .btn-lg { /* h-48 */
+    @apply px-[24px] py-[11px] text-base rounded-[8px] font-medium;
+  }
+  .btn-xl { /* h-60 */
+    @apply px-[32px] py-[15px] text-lg rounded-[8px] font-medium;
+  }
+  .btn-primary {
+    @apply bg-primary text-white border border-primary transition-all;
+  }
+  .btn-primary:not(.btn-icon):hover,
+  .btn-primary:not(.btn-icon):focus {
+    @apply bg-white text-primary;
+  }
+  .btn-border-primary {
+    @apply bg-white text-primary border border-primary transition-all;
+  }
+  .btn-border-primary:not(.btn-icon):hover,
+  .btn-border-primary:not(.btn-icon):focus {
+    @apply bg-primary text-white;
+  }
+  .btn-gray-500 {
+    @apply bg-gray-500 text-white border border-gray-500 transition-all;
+  }
+  .btn-gray-500:not(.btn-icon):hover,
+  .btn-gray-500:not(.btn-icon):focus {
+    @apply bg-white text-gray-500;
+  }
+  .btn-gray-400 {
+    @apply bg-gray-400 text-white border border-gray-400 transition-all;
+  }
+  .btn-gray-400:not(.btn-icon):hover,
+  .btn-gray-400:not(.btn-icon):focus {
+    @apply bg-white text-gray-400;
+  }
+  .btn-border-white {
+    @apply bg-white text-gray-500 border border-gray-400 transition-all;
+  }
+  .btn-border-white:not(.btn-icon):hover,
+  .btn-border-white:not(.btn-icon):focus {
+    @apply bg-gray-400 text-white;
+  }
+
+  /* 탭 */
+  .basic-tab .tab,
+  .tab-list {
+    @apply flex;
+    @apply gap-[8px] lg:gap-[16px];
+  }
+  .basic-tab .tab button[role='tab'],
+  .tab-list button {
+    @apply text-gray-500 bg-gray-100 rounded-full transition-all;
+    @apply px-[12px] py-[6px] text-sm lg:px-[24px] lg:py-[8px] lg:text-xl;
+  }
+  .basic-tab .tab button[aria-selected='true'],
+  .tab-list button.active {
+    @apply text-white bg-secondary;
+  }
+  .basic-tab .tab .btnAll {
+    @apply flex items-center ml-auto text-gray-500 font-medium;
+    @apply text-sm gap-[2px] lg:text-lg lg:gap-[8px];
+  }
+
+  /* 커뮤니티 */
+  .post-list {
+    @apply flex;
+    @apply flex-col gap-[12px] lg:flex-row lg:gap-[24px];
+  }
+  .post-list > li {
+    @apply bg-gray-50;
+    @apply w-[full] rounded-[8px] lg:w-[calc((100%-48px)/3)] lg:rounded-[16px];
+  }
+  .post-list > li a,
+  .post-list > li button {
+    @apply block p-[16px] lg:p-[32px];
+  }
+  .post-list > li .post-content {
+    @apply flex;
+    @apply gap-[16px] lg:gap-[24px];
+  }
+  .post-list > li .post-content .post-text {
+    @apply flex flex-col;
+    @apply w-[calc(100%-16px-80px)] gap-[12px] lg:w-[calc(100%-24px-132px)] lg:gap-[24px];
+  }
+  .post-list > li .post-content .post-title {
+    @apply truncate font-medium;
+    @apply text-base lg:text-2xl;
+  }
+  .post-list > li .post-content .post-title2 {
+    @apply line-clamp-2 font-medium;
+    @apply text-base lg:text-2xl;
+  }
+  .post-list > li .post-content .post-category {
+    @apply truncate text-primary;
+    @apply text-sm lg:text-xl;
+  }
+  .post-list > li .post-content .post-desc {
+    @apply line-clamp-2 text-gray-500;
+    @apply text-sm lg:text-xl;
+  }
+  .post-list > li .post-content .post-thumbnail {
+    @apply w-[80px] lg:w-[132px];
+    flex-shrink: 0;
+  }
+  .post-list > li .post-meta {
+    @apply flex items-center justify-between border-t border-gray-300 gap-[10px];
+    @apply mt-[16px] pt-[16px] lg:mt-[20px] lg:pt-[20px];
+  }
+  .post-list > li .post-meta .post-user {
+    @apply flex text-gray-500 overflow-hidden;
+    @apply text-xs lg:text-base;
+  }
+  .post-list > li .post-meta .post-user span {
+    flex-shrink: 0;
+  }
+  .post-list > li .post-meta .post-user span:not(:last-child)::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    vertical-align: middle;
+    @apply bg-gray-300;
+    @apply h-[8px] mx-[8px] lg:h-[10px] lg:mx-[12px];
+  }
+  .post-list > li .post-meta .post-comments {
+    @apply flex items-center text-gray-500;
+    @apply gap-[4px] text-xs lg:gap-[2px] lg:text-base;
+  }
+}
