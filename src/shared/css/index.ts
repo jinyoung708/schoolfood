@@ -1,1 +1,0 @@
-export { StyledSelect } from './comSelectBox';

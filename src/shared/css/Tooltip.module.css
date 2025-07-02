@@ -1,5 +1,0 @@
-.tooltip::before {
-  @apply block absolute w-[12px] h-[10px] left-[50%] top-[-9px] translate-x-[-50%];
-  content: '';
-  background: url('/images/icon/dropdown_arrow.png') no-repeat 0 0;
-}
