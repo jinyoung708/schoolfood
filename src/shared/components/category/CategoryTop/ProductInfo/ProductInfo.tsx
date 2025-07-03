@@ -25,9 +25,6 @@ export const ProductInfo = () => {
             <Icon src="copy.svg" alt="복사" />
           </button>
         </div>
-        <p className="lg:text-22 text-gray-600 lg:text-gray-500">
-          바질로 풍미를 더한 365g의 바질토마토 파스타 소스
-        </p>
       </div>
       <PriceInfo />
       <Divider />

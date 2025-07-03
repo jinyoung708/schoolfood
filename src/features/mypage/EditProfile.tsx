@@ -76,6 +76,7 @@ export const EditProfile = () => {
                 placeholder="비밀번호를 입력해주세요."
                 required
                 desc="8자 이상 영문, 숫자, 특수문자 조합"
+                type="password"
               />
             </div>
             <div>
@@ -83,6 +84,7 @@ export const EditProfile = () => {
                 label="비밀번호 확인"
                 placeholder="비밀번호를 한번 더 입력해주세요."
                 required
+                type="password"
               />
             </div>
             <div>

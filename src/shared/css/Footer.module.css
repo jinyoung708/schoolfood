@@ -38,34 +38,31 @@
   mix-blend-mode: darken;
 }
 
-.leftBox {
-  @apply mb-[20px] lg:mb-[0]
-}
 .rightBox .linkList {
-  @apply text-xs lg:text-lg mb-[20px] lg:mb-[24px];
+  @apply text-xs lg:text-lg mb-[24px] lg:mb-[24px] lg:gap-y-[10px] lg:flex lg:flex-wrap lg:justify-end;
   overflow: hidden;
 }
 .rightBox .linkList a {
-  float: left;
-  @apply mr-[16px] lg:mr-[40px]
+  @apply float-left mr-[16px] lg:mr-[30px]
 }
-.rightBox .textList {
-  @apply flex flex-wrap;
+.textList {
+  @apply lg:flex flex-wrap overflow-hidden;
 }
-.rightBox .textList:not(:last-child) {
+.textList:not(:last-child) {
   @apply mb-[4px] lg:mb-[8px]
 }
-.rightBox .textList span {
-  @apply text-xs lg:text-lg text-gray-500;
+.textList span {
+  display: inline-block;
+  @apply float-left lg:float-none text-xs lg:text-lg text-gray-500;
 }
-.rightBox .textList span:not(:last-child)::after {
+.textList span:not(:last-child)::after {
   display: inline-block;
   content: '';
-  @apply w-[1px] h-[10px] lg:h-[16px] bg-gray-300 mx-[8px] lg:mx-[12px] mt-[-2px];
   vertical-align: middle;
+  @apply w-[1px] h-[10px] lg:h-[16px] bg-gray-300 mx-[8px] lg:mx-[12px] mt-[-1px] lg:mt-[-2px];
 }
-.rightBox .textList a,
-.rightBox .textList button {
+.textList a,
+.textList button {
   text-underline-position: under;
 }
 
@@ -87,10 +84,20 @@
     background-size: 12px;
     background-position: right 8px center;
   }
-  .rightBox .linkList a:nth-child(3) {
+  .rightBox .linkList a:nth-child(4) {
     clear: both;
   }
-  .rightBox .linkList a:nth-child(n+3) {
+  .rightBox .linkList a:nth-child(n+4) {
+    margin-top: 4px;
+  }
+
+  .textList span:nth-child(2)::after {
+    display: none;
+  }
+  .textList span:nth-child(3) {
+    clear: both;
+  }
+  .textList span:nth-child(n+3) {
     margin-top: 4px;
   }
 }

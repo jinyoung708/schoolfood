@@ -132,11 +132,11 @@ body {
   .btn-gray-400:not(.btn-icon):focus {
     @apply bg-white text-gray-400;
   }
-  .btn-border-white {
+  .btn-border-gray {
     @apply bg-white text-gray-500 border border-gray-400 transition-all;
   }
-  .btn-border-white:not(.btn-icon):hover,
-  .btn-border-white:not(.btn-icon):focus {
+  .btn-border-gray:not(.btn-icon):hover,
+  .btn-border-gray:not(.btn-icon):focus {
     @apply bg-gray-400 text-white;
   }
 

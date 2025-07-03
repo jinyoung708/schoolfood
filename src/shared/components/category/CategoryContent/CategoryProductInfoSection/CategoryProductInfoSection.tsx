@@ -21,7 +21,6 @@ export const CategoryProductInfoSection = () => {
       </div>
       <div className="flex flex-col gap-[2px] lg:gap-[4px] text-center">
         <p className="text-2xl lg:text-34 font-medium">백설 바질 토마토 파스타소스</p>
-        <p className="lg:text-22 text-gray-500">바질로 풍미를 더한 365g의 바질토마토 파스타 소스</p>
       </div>
     </div>
   );

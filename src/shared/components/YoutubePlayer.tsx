@@ -69,7 +69,12 @@ export const YoutubePlayer = ({
                   cjfreshway_official
                 </span>
               </div>
-              <p className={cn('text-base lg:text-2xl font-bold line-clamp-2', styles.title)}>
+              <p
+                className={cn(
+                  'text-base lg:text-2xl font-bold line-clamp-2 text-left break-keep',
+                  styles.title,
+                )}
+              >
                 피스타치오와 카다이프가 들어간 이색 두바이 디저트
               </p>
             </div>

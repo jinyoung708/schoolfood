@@ -83,16 +83,23 @@ export const Footer = () => {
       <FooterLogo />
 
       <div className="container max-w-screen-lg mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between pt-[20px] lg:pt-[40px] pb-[calc(60px+var(--safeArea-b))] lg:pb-[80px]">
+        <div className="flex flex-col-reverse lg:flex-row justify-between pt-[20px] lg:pt-[40px] pb-[calc(60px+var(--safeArea-b))] lg:pb-[80px] lg:gap-[10px]">
           <div className={styles.leftBox}>
-            <p className="text-xs lg:text-lg font-medium mb-[8px] lg:mb-[20px]">고객 상담 센터</p>
-            <p className="text-22 text-primary lg:text-[42px] font-semibold mb-[8px] lg:mb-[26px]">
-              1600-0000
+            <p className={styles.textList}>
+              <span>상호명 : 씨제이프레시웨이주식회사</span>
+              <span>대표자명 : 이건일</span>
+              <span>사업자등록번호 : 603-81-11270</span>
+              <span>사이트 이용 문의 : noreply</span>
             </p>
-            <p className="text-xs lg:text-lg text-gray-500 mb-[4px] lg:mb-[8px] ">
-              월~금 07:00 ~ 18:00
+            <p className={styles.textList}>
+              <span>
+                주소 : 경기도 용인시 기흥구 기곡로 32(하갈동)(주사무소 : 서울시 마포구 월드컵북로
+                54길 25 S-city)
+              </span>
             </p>
-            <p className="text-xs lg:text-lg text-gray-500">공휴일 07:00 ~ 13:00(일요일 휴무)</p>
+            <p className="mt-[20px] lg:mt-[24px] text-sm lg:text-lg text-gray-500">
+              COPYRIGHT© CJ FRESHWAY. ALL RIGHTS RESERVED.
+            </p>
           </div>
           <div className={styles.rightBox}>
             <div className={styles.linkList}>
@@ -104,26 +111,6 @@ export const Footer = () => {
               <Link to="/legal/email">이메일 무단수집 거부</Link>
               <Link to="/">온라인제보</Link>
             </div>
-            <p className={styles.textList}>
-              <span>법인명 (상호) : 튼튼스쿨</span>
-              <span>사업자등록번호 : 000-00-00000</span>
-              <span>
-                <Link to="/" className="underline font-medium">
-                  사업자정보 확인
-                </Link>
-              </span>
-            </p>
-            <p className={styles.textList}>
-              <span>통신판매업 : 제 2000-서울강남-00000 호</span>
-            </p>
-            <p className={styles.textList}>
-              <span>주소 : 서울특별시 강남구 테헤란로 000, 00층(역삼동)</span>
-              <span>대표이사 : 홍길동</span>
-            </p>
-            <p className={styles.textList}>
-              <span>메일문의 : abcde123@gmail.com</span>
-              <span>팩스: 070 - 0000 - 0000</span>
-            </p>
           </div>
         </div>
       </div>
