@@ -46,7 +46,8 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
               thumb={{
                 src: '/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
-                ratio: '16/9',
+                ratio: '17/10',
+                isContain: true,
               }}
               info={{
                 title:
@@ -61,7 +62,8 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
               thumb={{
                 src: '/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
-                ratio: '16/9',
+                ratio: '17/10',
+                isContain: true,
               }}
               info={{
                 title:
@@ -76,7 +78,8 @@ export const CategoryRelatedSection = ({ className }: CategoryRelatedSectionProp
               thumb={{
                 src: '/images/img/recipe01.jpg',
                 alt: '레시피 이미지 1',
-                ratio: '16/9',
+                ratio: '17/10',
+                isContain: true,
               }}
               info={{
                 title:

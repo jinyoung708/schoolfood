@@ -358,7 +358,7 @@ export const PageList = () => {
                   /features/monthly/MonthlyEvent
                 </Link>
               </td>
-              <td>행사지 본문 내용 X</td>
+              <td>퍼블 완료</td>
             </tr>
 
             {/* 자료실 */}

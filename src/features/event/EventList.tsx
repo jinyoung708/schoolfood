@@ -34,12 +34,13 @@ export const EventList = () => {
         />
       </div>
       <div className="flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[18px]">
-        <ThumbList>
+        <ThumbList pcCol={3}>
           <ThumbItem
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -53,7 +54,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
@@ -66,7 +68,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
@@ -79,7 +82,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
@@ -92,7 +96,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
@@ -105,7 +110,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',
@@ -118,7 +124,8 @@ export const EventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강을 지키는 올바른 습관',

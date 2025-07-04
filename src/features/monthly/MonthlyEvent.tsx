@@ -10,6 +10,7 @@ import { Subtop } from '~/shared/components/subtop';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { ProductList } from '~/shared/components/List/ProductList';
+import { Mobile, PC } from '~/shared/components/Responsive';
 
 export const MonthlyEvent = () => {
   const isPC = useMediaQuery({ minWidth: 1024 });
@@ -24,7 +25,14 @@ export const MonthlyEvent = () => {
           at: '2025. 02. 25 ~ 2025. 02. 25',
         }}
       />
-      <div className="mt-[60px]">행사지본문</div>
+      <div className="mt-[60px]">
+        <PC>
+          <img src="/images/img/detail02.jpg" alt="PC 상세 이미지" />
+        </PC>
+        <Mobile>
+          <img src="/images/img/detail02.jpg" alt="MO 상세 이미지" />
+        </Mobile>
+      </div>
       <div className="mt-[60px] lg:mt-[120px]">
         <p className="text-lg lg:text-2xl font-medium mb-[8px] lg:mb-[24px]">관련 상품</p>
         <div className="mx-[-16px]">

@@ -44,7 +44,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '안전관리! 미끄러짐,넘어짐 사고',
@@ -64,7 +65,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP)관절과 척추 건강',
@@ -84,7 +86,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '영양POP관',
@@ -101,7 +104,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -122,7 +126,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -143,7 +148,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -164,7 +170,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -185,7 +192,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -206,7 +214,8 @@ export const ArchiveList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:

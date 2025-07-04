@@ -81,7 +81,7 @@ export const Recipe = () => {
                   <img
                     src="/images/img/recipe01.jpg"
                     alt="마라 수혈이 필요할 때 마파두부 덮밥"
-                    className="w-full h-full object-cover"
+                    className="w-full aspect-[17/10] object-cover"
                   />
                 </Link>
               </SwiperSlide>
@@ -90,7 +90,7 @@ export const Recipe = () => {
                   <img
                     src="/images/img/recipe02.jpg"
                     alt="부담 없는 두부면 팟타이"
-                    className="w-full h-full object-cover"
+                    className="w-full aspect-[17/10] object-cover"
                   />
                 </Link>
               </SwiperSlide>
@@ -99,7 +99,7 @@ export const Recipe = () => {
                   <img
                     src="/images/img/recipe03.jpg"
                     alt="톡톡 터지는 단짠 새콤함 옥수수 살사"
-                    className="w-full h-full object-cover"
+                    className="w-full aspect-[17/10] object-cover"
                   />
                 </Link>
               </SwiperSlide>

@@ -91,7 +91,7 @@
   height: 100%;
   position: relative;
 }
-.imgSwiper .play::after {
+/* .imgSwiper .play::after {
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -102,7 +102,7 @@
   background: url('/images/icon/play_big.svg') no-repeat center/contain;
   transform: translate(-50%, -50%);
   z-index: 1;
-}
+} */
 .textSwiperWrap {
   width: 37.57%;
   padding: 40px 48px;

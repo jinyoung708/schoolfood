@@ -300,16 +300,16 @@ export const RulesList = () => {
             </div>
           </div>
           <div>
-            <h3>16:9 비율 (레시피, 이벤트)</h3>
+            <h3>17:10 비율 (레시피, 이벤트, 자료실)</h3>
             <div className="w-[496px]">
-              <RatioImage src="/images/img/recipe01.jpg" className="aspect-[16/9]" isContain />
+              <RatioImage src="/images/img/recipe01.jpg" className="aspect-[17/10]" isContain />
             </div>
           </div>
         </section>
         <section>
           <h2>유튜브 동영상</h2>
           <div>
-            <h3>메인 (328*583)</h3>
+            <h3>메인 (9:16)</h3>
             <div className="example">
               <div className="rounded-[8px] lg:rounded-[16px] w-[202px] lg:w-[328px] overflow-hidden text-[0]">
                 <YoutubePlayer videoId="ikEpYxy4nCE" />
@@ -317,10 +317,10 @@ export const RulesList = () => {
             </div>
           </div>
           <div>
-            <h3>동영상 레시피 (16:9)</h3>
+            <h3>동영상 레시피 (17:10)</h3>
             <div className="example grid grid-cols-1 gap-y-[30px] lg:gap-y-[60px] lg:gap-x-[24px] lg:grid-cols-3">
               <div className="overflow-hidden rounded-[8px] text-[0px]">
-                <YoutubePlayer videoId="ikEpYxy4nCE" ratio="16/9" info={false} />
+                <YoutubePlayer videoId="ikEpYxy4nCE" ratio="17/10" info={false} />
               </div>
             </div>
           </div>
@@ -414,14 +414,15 @@ export const RulesList = () => {
             </div>
           </div>
           <div>
-            <h3>커뮤니티, 이벤트 리스트</h3>
+            <h3>갤러리형 리스트 (레시피, 이벤트, 자료실)</h3>
             <div className="example flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[18px]">
               <ThumbList>
                 <ThumbItem
                   thumb={{
                     src: '/images/img/recipe01.jpg',
                     alt: '이벤트 썸네일',
-                    ratio: '16/9',
+                    ratio: '17/10',
+                    isContain: true,
                   }}
                   info={{
                     title:
@@ -435,7 +436,8 @@ export const RulesList = () => {
                   thumb={{
                     src: '/images/img/recipe01.jpg',
                     alt: '이벤트 썸네일',
-                    ratio: '16/9',
+                    ratio: '17/10',
+                    isContain: true,
                   }}
                   info={{
                     title:
@@ -449,7 +451,8 @@ export const RulesList = () => {
                   thumb={{
                     src: '/images/img/recipe01.jpg',
                     alt: '이벤트 썸네일',
-                    ratio: '16/9',
+                    ratio: '17/10',
+                    isContain: true,
                   }}
                   info={{
                     title:
@@ -463,7 +466,8 @@ export const RulesList = () => {
                   thumb={{
                     src: '/images/img/recipe01.jpg',
                     alt: '이벤트 썸네일',
-                    ratio: '16/9',
+                    ratio: '17/10',
+                    isContain: true,
                   }}
                   info={{
                     title:

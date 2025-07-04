@@ -21,21 +21,21 @@ export const RecipeDetail = () => {
           {/* <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="h-full w-full aspect-[16/9] object-contain bg-gray-150 lg:rounded-[16px]"
+            className="h-full w-full aspect-[17/10] object-contain bg-gray-150 lg:rounded-[16px]"
           /> */}
 
           {/* 2) 텍스트 영역과 높이 동일, 이미지 꽉 채운 경우 */}
           {/* <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="h-full w-full aspect-[16/9] object-cover bg-gray-150 lg:rounded-[16px]"
+            className="h-full w-full aspect-[17/10] object-cover bg-gray-150 lg:rounded-[16px]"
           /> */}
 
           {/* 3) 높이 이미지 사이즈, 이미지 비율맞춘 경우 */}
           <img
             src="/images/img/recipe01.jpg"
             alt=""
-            className="w-full aspect-[16/9] object-contain bg-gray-150 lg:rounded-[16px]"
+            className="w-full aspect-[17/10] object-contain bg-gray-150 lg:rounded-[16px]"
           />
         </div>
 

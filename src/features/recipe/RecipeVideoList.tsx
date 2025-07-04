@@ -39,7 +39,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{
@@ -53,7 +54,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{
@@ -67,7 +69,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{
@@ -81,7 +84,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{
@@ -95,7 +99,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{
@@ -109,7 +114,8 @@ export const RecipeVideoList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               videoId: 'ikEpYxy4nCE',
             }}
             info={{

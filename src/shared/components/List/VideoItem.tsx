@@ -21,7 +21,8 @@
  *   thumb={{
  *     videoId: 'abc123',
  *     alt: '유튜브 썸네일',
- *     ratio: '16/9',
+ *     ratio: '17/10',
+ *     isContain: true,
  *     dimmedText: 'Live',
  *   }}
  *   info={{

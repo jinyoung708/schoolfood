@@ -39,7 +39,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -52,7 +53,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '우리학교 새학기 식단은 이렇게 했어요~ ',
@@ -64,7 +66,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -77,7 +80,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -90,7 +94,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '우리학교 새학기 식단은 이렇게 했어요~ ',
@@ -102,7 +107,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -115,7 +121,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:
@@ -128,7 +135,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title: '우리학교 새학기 식단은 이렇게 했어요~ ',
@@ -140,7 +148,8 @@ export const RecipeList = () => {
             thumb={{
               src: '/images/img/temp1.jpg',
               alt: '우리학교 급식자랑 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
             }}
             info={{
               title:

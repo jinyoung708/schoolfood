@@ -19,7 +19,7 @@
  *     thumb={{
  *       src: '/images/img/recipe01.jpg',
  *       alt: '레시피 썸네일',
- *       ratio: '16/9',
+ *       ratio: '17/10',
  *       isContain: true,
  *    }}
  *    info={{

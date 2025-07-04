@@ -30,12 +30,13 @@ export const EndedEventList = () => {
         />
       </div>
       <div className="flex flex-col gap-[40px] lg:gap-[80px] mt-[20px] lg:mt-[18px]">
-        <ThumbList>
+        <ThumbList pcCol={3}>
           <ThumbItem
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -50,7 +51,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -65,7 +67,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -80,7 +83,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -95,7 +99,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -110,7 +115,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{
@@ -125,7 +131,8 @@ export const EndedEventList = () => {
             thumb={{
               src: '/images/img/recipe01.jpg',
               alt: '이벤트 썸네일',
-              ratio: '16/9',
+              ratio: '17/10',
+              isContain: true,
               dimmedText: '종료된 이벤트',
             }}
             info={{

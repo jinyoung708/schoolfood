@@ -26,7 +26,7 @@ interface YoutubePlayerProps {
 
 export const YoutubePlayer = ({
   videoId,
-  ratio = '328/583',
+  ratio = '9/16',
   className,
   info = true,
 }: YoutubePlayerProps) => {
