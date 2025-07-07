@@ -54,7 +54,7 @@ export const Tooltip = ({ title, children }: TooltipProps) => {
                       <Icon src="close_tooltip.svg" alt="닫기" />
                     </CloseButton>
                   </div>
-                  <div className="overflow-auto px-[20px] pb-[32px] lg:p-[12px] lg:pr-[36px]">
+                  <div className="overflow-auto px-[20px] pb-[calc(32px+var(--safeArea-b))] lg:p-[12px] lg:pr-[36px]">
                     <p className="lg:text-sm">{children}</p>
                   </div>
                 </div>

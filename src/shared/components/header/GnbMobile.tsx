@@ -113,7 +113,7 @@ export const GnbMobile = ({ scrollY, title }: GnbMobileProps) => {
                     김튼튼
                     <Icon src="setting.svg" />
                   </Button>
-                  <Button className="btn-sm btn-border-white ml-auto">로그아웃</Button>
+                  <Button className="btn-sm btn-border-gray ml-auto">로그아웃</Button>
                 </>
               ) : (
                 <>

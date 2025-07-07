@@ -40,7 +40,7 @@ export const AllCheck = ({ title, children }: AllCheckProps) => {
       {({ open }) => {
         return (
           <>
-            <PopoverButton className="flex gap-[4px] lg:gap-[8px] text-sm lg:text-base font-medium">
+            <PopoverButton className="flex gap-[4px] lg:gap-[8px] text-sm lg:text-base font-medium items-center">
               전체상품
               <Icon src="arrow_down2_gray.svg" className={cn(open ? '-rotate-180' : 'rotate-0')} />
             </PopoverButton>

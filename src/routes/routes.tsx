@@ -147,6 +147,11 @@ export const routes: CustomRouteObject[] = [
       { path: '/mypage', title: '마이페이지', element: <FavoritesPage /> },
       { path: '/mypage/post', title: '마이페이지', element: <MyPostsPage /> },
       { path: '/mypage/edit', title: '마이페이지', element: <EditProfilePage /> },
+
+      // 에러 페이지
+      { path: '/error1', title: '', element: <Error404Page /> },
+      { path: '/error2', title: '', element: <NetworkErrorPage /> },
+      { path: '/error3', title: '', element: <Maintenance /> },
     ],
   },
 
@@ -158,11 +163,6 @@ export const routes: CustomRouteObject[] = [
       { path: '/category/list', title: '핫도그·만두·냉동기타', element: <CategoryListPage /> },
     ],
   },
-
-  // 에러 페이지
-  { path: '/error1', element: <Error404Page /> },
-  { path: '/error2', element: <NetworkErrorPage /> },
-  { path: '/error3', element: <Maintenance /> },
 
   // 퍼블리싱 전용
   { path: '/publish', element: <PublishPage /> },

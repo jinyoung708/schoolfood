@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { ComSwitch } from '~/shared/ui/ComSwitch';
 
 export const PriceInfo = () => {
+  const [enabled, setEnabled] = useState(true);
   return (
     <>
       {/* 회원/비회원 레이아웃 동일하고 내부 컨텐츠만 다름 */}
@@ -24,7 +26,7 @@ export const PriceInfo = () => {
         </div>
         <div className="flex items-center gap-[8px]">
           <span className="text-sm lg:text-sm text-gray-500">VAT 포함</span>
-          <ComSwitch onChange={() => {}} />
+          <ComSwitch checked={enabled} onChange={setEnabled} />
         </div>
       </div>
       {/* 비회원 */}

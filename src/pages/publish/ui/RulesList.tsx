@@ -91,6 +91,13 @@ export const RulesList = () => {
         <section>
           <h2>컬러 클래스명</h2>
           <div>
+            <h3>사용 예시</h3>
+            <ol>
+              <li>배경색 : bg-primary</li>
+              <li>폰트색 : text-primary</li>
+            </ol>
+          </div>
+          <div>
             <h3>Primary color</h3>
             <ul className="flex flex-col gap-[20px]">
               <li>
@@ -384,11 +391,12 @@ export const RulesList = () => {
               <ProductList login />
               <ProductList login noPrice />
               <ProductList login noUnitPrice />
+              <ProductList login ingPrice />
               <ProductList login stop />
             </div>
           </div>
           <div>
-            <h3>연관상품리스트</h3>
+            <h3>연관상품 리스트</h3>
             <div className="example">
               <ProductSwiper title="메뉴 사용한 상품" />
             </div>

@@ -4,7 +4,7 @@ export const OFFSETS = {
     fixed: {
       tabTop: 118,
       scrollOffset: 200,
-      scrollMarginTop: 200,
+      scrollMarginTop: 185,
     },
     notFixed: {
       tabTop: 0,
