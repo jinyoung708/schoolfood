@@ -27,7 +27,7 @@ interface TooltipProps {
 }
 export const Tooltip = ({ title, children }: TooltipProps) => {
   return (
-    <Popover className="relative">
+    <Popover className="relative text-[0]">
       {({ open }) => {
         return (
           <>
