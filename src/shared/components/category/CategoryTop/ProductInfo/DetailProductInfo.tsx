@@ -5,7 +5,7 @@ export const DetailProductInfo = () => {
   return (
     <dl className="flex flex-col lg:flex-row lg:flex-wrap gap-y-[12px] lg:gap-y-[30px]">
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_code.svg" className="shrink-0" />
+        <Icon src="productInfo_code.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">품목코드</span>
@@ -23,7 +23,7 @@ export const DetailProductInfo = () => {
         </div>
       </div>
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_standard.svg" className="shrink-0" />
+        <Icon src="productInfo_standard.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">규격</span>
@@ -42,7 +42,7 @@ export const DetailProductInfo = () => {
         </div>
       </div>
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_perBox.svg" className="shrink-0" />
+        <Icon src="productInfo_perBox.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">박스입수량</span>
@@ -53,7 +53,7 @@ export const DetailProductInfo = () => {
         </div>
       </div>
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_storage.svg" className="shrink-0" />
+        <Icon src="productInfo_storage.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">저장조건</span>
@@ -64,7 +64,7 @@ export const DetailProductInfo = () => {
         </div>
       </div>
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_expiration.svg" className="shrink-0" />
+        <Icon src="productInfo_expiration.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">유통기한(일)</span>
@@ -75,7 +75,7 @@ export const DetailProductInfo = () => {
         </div>
       </div>
       <div className="flex items-center gap-[12px] lg:w-[33.33%]">
-        <Icon src="productInfo_allergy.svg" className="shrink-0" />
+        <Icon src="productInfo_allergy.svg" className="shrink-0 w-[40px] lg:w-auto" />
         <div className="flex flex-col">
           <dt className="flex items-center gap-[4px]">
             <span className="text-xs lg:text-base text-gray-500">알러지 정보</span>

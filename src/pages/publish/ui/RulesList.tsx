@@ -418,6 +418,17 @@ export const RulesList = () => {
                     isPinned
                   />
                 </li>
+                <li>
+                  <BoardItem
+                    id={8}
+                    link="/qna/detail"
+                    category="Q&A"
+                    title="Q&A 게시판 제목입니다."
+                    createdBy="사용자1"
+                    createdAt="2023.10.01 12:36"
+                    commentCount={5}
+                  />
+                </li>
               </ul>
             </div>
           </div>

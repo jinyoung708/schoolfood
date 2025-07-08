@@ -22,7 +22,7 @@ export const TextBadge = ({ children, color = 'gray', isBold, className }: TextB
   return (
     <span
       className={cn(
-        'h-[18px] lg:h-[26px] flex items-center justify-center rounded-[2px] px-[4px] lg:px-[6px] text-[10px] lg:text-sm',
+        'h-[18px] lg:h-[26px] flex items-center justify-center rounded-[2px] px-[4px] lg:px-[6px] text-[10px] lg:text-sm whitespace-nowrap',
         color === 'gray' && 'bg-gray-100 text-gray-500',
         color === 'red' && 'bg-point-pink text-white',
         isBold && 'font-bold',

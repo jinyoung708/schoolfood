@@ -6,7 +6,7 @@ export const DetailPriceInfo = () => {
       {/* 회원/비회원 레이아웃 동일하고 내부 컨텐츠만 다름 */}
       {/* 회원 */}
       <div className="w-full flex items-center justify-between gap-[8px]">
-        <dt className="flex items-center gap-[6px] text-gray-700">
+        <dt className="flex items-center gap-[6px] text-gray-500">
           <span>면·과세</span>
         </dt>
         <dd className="flex items-center gap-[16px]">
@@ -14,7 +14,7 @@ export const DetailPriceInfo = () => {
         </dd>
       </div>
       <div className="w-full flex items-center justify-between gap-[8px]">
-        <dt className="flex items-center gap-[6px] text-gray-700">
+        <dt className="flex items-center gap-[6px] text-gray-500">
           <span>kg당</span>
           <Icon src="copy.svg" alt="복사" />
         </dt>
@@ -24,7 +24,7 @@ export const DetailPriceInfo = () => {
         </dd>
       </div>
       <div className="w-full flex items-center justify-between gap-[8px]">
-        <dt className="flex items-center gap-[6px] text-gray-700">
+        <dt className="flex items-center gap-[6px] text-gray-500">
           <span>개당</span>
         </dt>
         <dd className="flex items-center gap-[16px]">
@@ -34,7 +34,7 @@ export const DetailPriceInfo = () => {
       </div>
       {/* 비회원 */}
       <div className="w-full flex items-center justify-between gap-[8px]">
-        <dt className="flex items-center gap-[6px] text-gray-700">
+        <dt className="flex items-center gap-[6px] text-gray-500">
           <span>kg당</span>
           <Icon src="copy.svg" alt="복사" />
         </dt>
@@ -43,7 +43,7 @@ export const DetailPriceInfo = () => {
         </dd>
       </div>
       <div className="w-full flex items-center justify-between gap-[8px]">
-        <dt className="flex items-center gap-[6px] text-gray-700">
+        <dt className="flex items-center gap-[6px] text-gray-500">
           <span>개당</span>
         </dt>
         <dd className="flex items-center gap-[16px]">

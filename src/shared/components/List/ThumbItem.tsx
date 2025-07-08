@@ -92,7 +92,7 @@ export const ThumbItem = ({
           <p className="text-lg lg:text-28 line-clamp-2 font-semibold">{info.title}</p>
           <div className="flex items-center justify-between gap-[16px]">
             {/* left area */}
-            <div>
+            <div className="min-w-0">
               {/* desc ( badge 포함 ) */}
               {info.desc && (
                 <div className="line-clamp-1 text-sm lg:text-xl text-gray-500">{info.desc}</div>

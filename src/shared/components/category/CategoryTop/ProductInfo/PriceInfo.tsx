@@ -7,7 +7,7 @@ export const PriceInfo = () => {
     <>
       {/* 회원/비회원 레이아웃 동일하고 내부 컨텐츠만 다름 */}
       {/* 회원 */}
-      <div className="flex items-end justify-between">
+      <div className="flex items-end justify-between lg:w-[405px]">
         <div className="flex flex-col gap-[4px] lg:gap-[8px]">
           <div className="flex items-center gap-[8px] lg:gap-[16px]">
             <span className="lg:text-lg text-gray-500">규격단가</span>
