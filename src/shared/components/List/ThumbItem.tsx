@@ -95,7 +95,14 @@ export const ThumbItem = ({
             <div className="min-w-0">
               {/* desc ( badge 포함 ) */}
               {info.desc && (
-                <div className="line-clamp-1 text-sm lg:text-xl text-gray-500">{info.desc}</div>
+                <div
+                  className={cn(
+                    'text-sm lg:text-xl text-gray-500',
+                    typeof info.desc === 'string' ? 'line-clamp-1' : 'overflow-hidden',
+                  )}
+                >
+                  {info.desc}
+                </div>
               )}
               {info.created && (
                 <p className="flex items-center gap-[8px] lg:gap-[12px] text-sm lg:text-base text-gray-500">
