@@ -290,27 +290,71 @@ export const RulesList = () => {
           <h2>이미지 비율</h2>
           <div>
             <h3>1:1 비율 (연관 상품)</h3>
-            <div className="w-[155px]">
-              <RatioImage src="/images/img/product01.jpg" className="aspect-[1/1]" isContain />
-            </div>
+            <ol className="flex gap-[50px]">
+              <li>
+                비율 맞춤(contain)
+                <div className="w-[155px] mt-[10px]">
+                  <RatioImage src="/images/img/product01.jpg" className="aspect-[1/1]" isContain />
+                </div>
+              </li>
+              <li>
+                이미지 꽉채움(cover)
+                <div className="w-[155px] mt-[10px]">
+                  <RatioImage src="/images/img/product01.jpg" className="aspect-[1/1]" />
+                </div>
+              </li>
+            </ol>
           </div>
           <div>
             <h3>4:5 비율 (상품)</h3>
-            <div className="w-[288px]">
-              <RatioImage src="/images/img/product01.jpg" className="aspect-[4/5]" isContain />
-            </div>
+            <ol className="flex gap-[50px]">
+              <li>
+                비율 맞춤(contain)
+                <div className="w-[288px] mt-[10px]">
+                  <RatioImage src="/images/img/product01.jpg" className="aspect-[4/5]" isContain />
+                </div>
+              </li>
+              <li>
+                이미지 꽉채움(cover)
+                <div className="w-[288px] mt-[10px]">
+                  <RatioImage src="/images/img/product01.jpg" className="aspect-[4/5]" />
+                </div>
+              </li>
+            </ol>
           </div>
           <div>
             <h3>4:3 비율 (우리학교 급식자랑)</h3>
-            <div className="w-[366px]">
-              <RatioImage src="/images/img/temp1.jpg" className="aspect-[4/3]" isContain />
-            </div>
+            <ol className="flex gap-[50px]">
+              <li>
+                비율 맞춤(contain)
+                <div className="w-[366px] mt-[10px]">
+                  <RatioImage src="/images/img/temp1.jpg" className="aspect-[4/3]" isContain />
+                </div>
+              </li>
+              <li>
+                이미지 꽉채움(cover)
+                <div className="w-[366px] mt-[10px]">
+                  <RatioImage src="/images/img/temp1.jpg" className="aspect-[4/3]" />
+                </div>
+              </li>
+            </ol>
           </div>
           <div>
             <h3>17:10 비율 (레시피, 이벤트, 자료실)</h3>
-            <div className="w-[496px]">
-              <RatioImage src="/images/img/recipe01.jpg" className="aspect-[17/10]" isContain />
-            </div>
+            <ol className="flex gap-[50px]">
+              <li>
+                비율 맞춤(contain)
+                <div className="w-[496px] mt-[10px]">
+                  <RatioImage src="/images/img/recipe01.jpg" className="aspect-[17/10]" isContain />
+                </div>
+              </li>
+              <li>
+                이미지 꽉채움(cover)
+                <div className="w-[496px] mt-[10px]">
+                  <RatioImage src="/images/img/recipe01.jpg" className="aspect-[17/10]" />
+                </div>
+              </li>
+            </ol>
           </div>
         </section>
         <section>

@@ -14,12 +14,14 @@ import { Modal1 } from '~/shared/components/modal/Modal1';
 import { Modal2 } from '~/shared/components/modal/Modal2';
 import { Modal3 } from '~/shared/components/modal/Modal3';
 import { Modal4 } from '~/shared/components/modal/Modal4';
+import { Toast } from '~/shared/components/modal/Toast';
 import { Subtop } from '~/shared/components/subtop';
 import { cn } from '~/shared/utils';
 
 export const ModalPopup = () => {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
+  const [toastOpen, setToastOpen] = useState(false);
 
   const openModal = (modalId: string) => {
     setActiveId(modalId);
@@ -29,6 +31,10 @@ export const ModalPopup = () => {
   const closeModal = () => {
     setOpen(false);
     setActiveId(null);
+  };
+
+  const openToast = () => {
+    setToastOpen(true);
   };
 
   return (
@@ -70,6 +76,9 @@ export const ModalPopup = () => {
       </Button>
       <Button className="block btn-primary btn-md mb-[10px]" onClick={() => openModal('modal12')}>
         2차 가공 마케팅 사용 동의 (필수)
+      </Button>
+      <Button className="block btn-primary btn-md mb-[10px]" onClick={openToast}>
+        토스트팝업
       </Button>
 
       {activeId === 'modal1' && (
@@ -314,6 +323,8 @@ export const ModalPopup = () => {
           primaryBtn="확인"
         />
       )}
+
+      {toastOpen && <Toast open={toastOpen} desc="ㅇㅇㅇ이 복사되었습니다." />}
     </div>
   );
 };
