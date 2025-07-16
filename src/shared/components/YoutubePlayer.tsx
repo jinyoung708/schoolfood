@@ -11,7 +11,7 @@
  */
 
 import { Button, Dialog, DialogPanel } from '@headlessui/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '~/shared/utils';
 import styles from '~/shared/css/YoutubePlayer.module.css';
 import { Icon } from './Icon';
@@ -32,11 +32,45 @@ export const YoutubePlayer = ({
 }: YoutubePlayerProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const aspectClass = `aspect-[${ratio}]`;
+  const [thumbnailUrl, setThumbnailUrl] = useState('');
 
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&modestbranding=1`;
-  const modalEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  const aspectClass = `aspect-[${ratio}]`;
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&vq=hd1080`;
+  const modalEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&vq=hd1080`;
+
+  useEffect(() => {
+    let isCancelled = false;
+    const base = `https://img.youtube.com/vi/${videoId}`;
+    const maxresUrl = `${base}/maxresdefault.jpg`;
+    const sdUrl = `${base}/sddefault.jpg`;
+    const hqUrl = `${base}/hqdefault.jpg`;
+
+    const checkImage = (url: string, fallback: () => void) => {
+      const img = new Image();
+      img.src = url;
+      img.onload = () => {
+        if (isCancelled) return;
+        if (img.naturalWidth === 120 && img.naturalHeight === 90) {
+          fallback();
+        } else {
+          setThumbnailUrl(url);
+        }
+      };
+      img.onerror = () => {
+        if (!isCancelled) fallback();
+      };
+    };
+
+    checkImage(maxresUrl, () =>
+      checkImage(sdUrl, () => {
+        if (!isCancelled) setThumbnailUrl(hqUrl);
+      }),
+    );
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [videoId]);
 
   return (
     <>
@@ -87,6 +121,8 @@ export const YoutubePlayer = ({
               allow="autoplay; encrypted-media"
               allowFullScreen
               title="YouTube Preview"
+              loading="lazy"
+              aria-label="YouTube 영상 미리보기"
             />
           </PC>
         )}
@@ -113,6 +149,8 @@ export const YoutubePlayer = ({
               allow="autoplay; encrypted-media"
               allowFullScreen
               title="YouTube Modal Video"
+              loading="lazy"
+              aria-label="YouTube 영상 보기"
             />
           </DialogPanel>
         </div>
