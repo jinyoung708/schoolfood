@@ -80,6 +80,9 @@ export const ModalPopup = () => {
       <Button className="block btn-primary btn-md mb-[10px]" onClick={openToast}>
         토스트팝업
       </Button>
+      <Button className="block btn-primary btn-md mb-[10px]" onClick={() => openModal('modal13')}>
+        비밀번호 재설정
+      </Button>
 
       {activeId === 'modal1' && (
         <Modal1
@@ -325,6 +328,37 @@ export const ModalPopup = () => {
       )}
 
       {toastOpen && <Toast open={toastOpen} desc="ㅇㅇㅇ이 복사되었습니다." />}
+
+      {activeId === 'modal13' && (
+        <Modal2
+          open={open}
+          onClose={closeModal}
+          title="비밀번호 재설정"
+          noCloseBtn
+          desc={
+            <div className="text-left">
+              <InputText
+                label="새 비밀번호"
+                required
+                placeholder="새로운 비밀번호를 입력해주세요."
+                className="mb-[24px]"
+                desc="8자 이상 영문, 숫자, 특수문자 조합"
+              />
+              <InputText
+                label="새 비밀번호 확인"
+                required
+                placeholder="비밀번호를 한 번 더 입력해주세요."
+              />
+              <ul className="text-sm text-gray-500 mt-[16px]">
+                <li>계정(ID)과 4자리 이상 동일한 패스워드는 사용 불가합니다.</li>
+                <li>4자리 이상 반복되는 문자나 숫자 사용 불가합니다.</li>
+                <li>이전에 사용한 패스워드와 타 사이트와 다른 패스워드를 사용해주세요.</li>
+              </ul>
+            </div>
+          }
+          primaryBtn="확인"
+        />
+      )}
     </div>
   );
 };

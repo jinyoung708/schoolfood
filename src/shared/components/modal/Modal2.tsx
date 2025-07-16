@@ -24,6 +24,7 @@ interface Modal2Props {
   whiteBtn?: string;
   noScrollbar?: boolean;
   mobileBtn?: boolean;
+  noCloseBtn?: boolean;
 }
 
 export const Modal2 = ({
@@ -35,9 +36,14 @@ export const Modal2 = ({
   whiteBtn,
   noScrollbar,
   mobileBtn,
+  noCloseBtn,
 }: Modal2Props) => {
   return (
-    <Dialog open={open} onClose={onClose} className="relative z-[var(--header-z)]">
+    <Dialog
+      open={open}
+      onClose={noCloseBtn ? () => {} : onClose}
+      className="relative z-[var(--header-z)]"
+    >
       <div className="fixed inset-0 flex w-screen items-center justify-center p-[16px] bg-black/40">
         <DialogPanel className="relative max-w-[560px] w-full bg-white p-[20px] lg:p-[40px] rounded-[8px] lg:rounded-[16px]">
           {title && (
@@ -47,9 +53,11 @@ export const Modal2 = ({
               )}
             >
               <div>{title}</div>
-              <Button onClick={onClose} className="shrink-0">
-                <Icon src="close_modal.svg" className="w-[16px] lg:w-auto" alt="닫기" />
-              </Button>
+              {!noCloseBtn && (
+                <Button onClick={onClose} className="shrink-0">
+                  <Icon src="close_modal.svg" className="w-[16px] lg:w-auto" alt="닫기" />
+                </Button>
+              )}
             </DialogTitle>
           )}
           {desc && (
