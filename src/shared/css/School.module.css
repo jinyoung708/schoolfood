@@ -1,17 +1,29 @@
 .imgSwiper :global(.swiper-pagination) {
   @apply bottom-[20px] lg:bottom-[30px] text-[0];
 }
+.imgSwiper :global(.swiper-button-prev),
+.imgSwiper :global(.swiper-button-next) {
+  @apply w-[40px] lg:w-[64px] h-[40px] lg:h-[64px] bg-no-repeat bg-center bg-contain;
+  
+}
+.imgSwiper :global(.swiper-button-prev)::after,
+.imgSwiper :global(.swiper-button-next)::after {
+  display: none;
+}
+.imgSwiper :global(.swiper-button-prev) {
+  @apply left-[8px] lg:left-[16px];
+  background-image: url('/images/icon/arrow_prev.svg');
+}
+.imgSwiper :global(.swiper-button-next) {
+  @apply right-[8px] lg:right-[16px];
+  background-image: url('/images/icon/arrow_next.svg');
+}
+.imgSwiper :global(.swiper-button-disabled) {
+  @apply opacity-0;
+}
 
 .productSwiper {
   position: static;
-}
-.productSwiper::after {
-  @apply hidden lg:block absolute w-[100px] h-full right-0 top-0 z-[1];
-  content: '';
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
-}
-.productSwiper.end::after {
-  z-index: -1;
 }
 .productSwiper .active :global(.thumbnail:before) {
   content: '';
@@ -27,6 +39,11 @@
 }
 .productSwiper :global(.swiper-button-next) {
   right: 0;
+}
+.productSwiper :global(.swiper-button-next)::before {
+  @apply hidden lg:block absolute w-[100px] h-[309px] right-0 top-[-53.5px] z-[-1];
+  content: '';
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 .productSwiper :global(.swiper-button-prev::after),
 .productSwiper :global(.swiper-button-next::after) {

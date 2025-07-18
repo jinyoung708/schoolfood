@@ -4,13 +4,14 @@
  */
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 import { Comment } from '~/shared/components/comment/Comment';
 import { PostInfo } from '~/shared/components/post/PostInfo';
 import { PostSiblings } from '~/shared/components/post/PostSiblings';
 import { ProductSwiper } from '~/shared/components/post/ProductSwiper';
 import { Subtop } from '~/shared/components/subtop';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import styles from '~/shared/css/School.module.css';
 import { cn } from '~/shared/utils';
 import { AddProductTooltip } from '~/shared/components/modal/AddProductTooltip';
@@ -24,9 +25,9 @@ export const SchoolDetail = () => {
       <div className="lg:flex gap-[48px]">
         <div className="mx-[-16px] lg:mx-0 lg:w-[55.98%]">
           <Swiper
-            modules={[Pagination]}
-            pagination
-            loop
+            modules={[Pagination, Navigation]}
+            pagination={{ clickable: true }}
+            navigation
             className={cn('w-full lg:rounded-[16px]', styles.imgSwiper)}
           >
             <SwiperSlide className="relative">
